@@ -10,8 +10,8 @@ paperurl: 'https://doi.org/10.1007/s12144-026-09243-x'
 citation: 'Avalos-Tejeda, M., Langer, Á.I., Crockett, M.A. Martínez, V., Gaete, J., Mac-Ginty, S., Nuñez, D. Experiential avoidance and mental health in university students: exploring novel indices for bridge communities and node links. Current Psychology (2026) 45, 664. https://doi.org/10.1007/s12144-026-09243-x'
 ---
 
-**Autores:** Avalos-Tejeda, M., Langer, Á.I., Crockett, M.A
-**Revista/Venue:** Experiential avoidance and mental health in university stude
+**Autores:** Avalos-Tejeda, M., Langer, Á.I., Crockett, M.A. Martínez, V., Gaete, J., Mac-Ginty, S., Nuñez, D.
+**Revista/Venue:** Current Psychology
 **Año:** 2026
 
 Avalos-Tejeda, M., Langer, Á.I., Crockett, M.A. Martínez, V., Gaete, J., Mac-Ginty, S., Nuñez, D. Experiential avoidance and mental health in university students: exploring novel indices for bridge communities and node links. Current Psychology (2026) 45, 664. https://doi.org/10.1007/s12144-026-09243-x
