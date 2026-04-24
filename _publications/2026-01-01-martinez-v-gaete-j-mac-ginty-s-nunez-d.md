@@ -3,7 +3,7 @@ title: "Experiential avoidance and mental health in university students: explori
 collection: publications
 category: manuscripts
 permalink: /publication/2026-martinez-v-gaete-j-mac-ginty-s-nunez-d
-excerpt: 'Experiential avoidance and mental health in university stude (2026)'
+excerpt: 'Current Psychology (2026)'
 date: 2026-01-01
 venue: 'Current Psychology'
 paperurl: 'https://doi.org/10.1007/s12144-026-09243-x'
