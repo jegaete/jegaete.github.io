@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Jorge Gaete Olivares"
+title: "Jorge E. Gaete Olivares"
 excerpt: "Profesor Titular y Director del Centro ISME, Escuela de Educación, Universidad de los Andes."
 author_profile: true
 redirect_from:
