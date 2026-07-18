@@ -19,7 +19,7 @@ author:
   orcid            : "https://orcid.org/0000-0002-6650-6018"
   googlescholar    : "https://scholar.google.es/citations?user=g99obcwAAAAJ&hl=es"
   researchgate     : ""
-  linkedin         : ""
+  linkedin         : "jorge-gaete-a620a955"
   twitter          : ""
 
 
@@ -42,7 +42,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  # linkedin already set above
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
