@@ -21,4 +21,4 @@ El proyecto tiene como objetivo evaluar la aceptabilidad, factibilidad y eficaci
 **Rol:** Investigador Principal (PI)  
 **Presupuesto aprobado:** CL$ 258.674.000 (≈ US$ 282.000)
 
-🌐 [Sitio web del proyecto](https://jegaete.github.io/caribou-project/index.html)
+🌐 <a href="https://jegaete.github.io/caribou-project/index.html" target="_blank">Sitio web del proyecto</a>
