@@ -1,7 +1,7 @@
 ---
 title: "Alβan Scholarship"
 collection: projects
-permalink: /projects/2005-alβan-scholarship/
+permalink: /projects/2005-alan-scholarship/
 excerpt: "European Commission (2005–2007)"
 date: 2005-01-01
 years: "2005–2007"

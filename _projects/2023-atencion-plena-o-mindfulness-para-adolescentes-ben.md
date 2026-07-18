@@ -1,7 +1,7 @@
 ---
 title: "Atención Plena o Mindfulness para Adolescentes Beneficiarios de la Comuna de Lo Barnechea"
 collection: projects
-permalink: /projects/2023-atención-plena-o-mindfulness-para-adolescentes-benefici/
+permalink: /projects/2023-atencion-plena-o-mindfulness-para-adolescentes-ben/
 excerpt: "Municipalidad de Lo Barnechea (2023–2024)"
 date: 2023-01-01
 years: "2023–2024"

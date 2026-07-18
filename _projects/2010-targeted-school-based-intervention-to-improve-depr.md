@@ -1,7 +1,7 @@
 ---
 title: "Targeted school-based intervention to improve depressive symptoms among at-risk Chilean adolescents"
 collection: projects
-permalink: /projects/2010-targeted-school-based-intervention-to-improve-depressiv/
+permalink: /projects/2010-targeted-school-based-intervention-to-improve-depr/
 excerpt: "Wellcome Trust (2010–2012)"
 date: 2010-01-01
 years: "2010–2012"
