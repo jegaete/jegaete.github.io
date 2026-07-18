@@ -60,7 +60,8 @@ redirect_from:
 <script>
 (function() {
   fetch('https://pub.orcid.org/v3.0/0000-0002-6650-6018/works', {
-    headers: { 'Accept': 'application/json' }
+    headers: { 'Accept': 'application/json' },
+    cache: 'no-store'
   })
   .then(function(r) { return r.json(); })
   .then(function(data) {
