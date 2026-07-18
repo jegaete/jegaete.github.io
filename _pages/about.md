@@ -32,7 +32,6 @@ redirect_from:
 <ul>
   <li>Director, <strong><a href="https://www.ismeuandes.cl" target="_blank">Centro de Investigación en Salud Mental Estudiantil (ISME)</a></strong>, <a href="https://www.uandes.cl" target="_blank">Universidad de los Andes</a></li>
   <li>Profesor Titular, <strong>Escuela de Educación</strong>, <a href="https://www.uandes.cl" target="_blank">Universidad de los Andes</a></li>
-  <li>Investigador, <strong>Núcleo Milenio para Mejorar la Salud Mental de Adolescentes y Jóvenes (IMHAY)</strong></li>
   <li>Clinical Research Fellow (2025), <strong><a href="https://www.camh.ca" target="_blank">Centre for Addiction and Mental Health (CAMH)</a></strong>, <a href="https://www.utoronto.ca" target="_blank">University of Toronto</a>, Canadá</li>
 </ul>
 
