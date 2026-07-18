@@ -41,7 +41,7 @@ author_profile: true
 }
 .pub-item:last-child { border-bottom: none; }
 .pub-title {
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   font-weight: 600;
   color: #222;
   margin-bottom: 0.15rem;
@@ -49,13 +49,13 @@ author_profile: true
 .pub-title a { color: #2a5db0; text-decoration: none; }
 .pub-title a:hover { text-decoration: underline; }
 .pub-venue {
-  font-size: 0.80rem;
+  font-size: 0.83rem;
   color: #555;
   font-style: italic;
   margin-bottom: 0.1rem;
 }
 .pub-citation {
-  font-size: 0.78rem;
+  font-size: 0.81rem;
   color: #888;
   line-height: 1.55;
 }
@@ -79,7 +79,7 @@ author_profile: true
     {% if p_year == year %}{% assign year_count = year_count | plus: 1 %}{% endif %}
   {% endfor %}
   <div class="pub-year-section">
-  <div class="pub-year-header">{{ year }}<span class="pub-year-count">({{ year_count }})</span></div>
+  <div class="pub-year-header">{{ year }}<span class="pub-year-count">{{ year_count }} publicaciones</span></div>
   {% for post in sorted_pubs %}
     {% assign post_year = post.date | date: "%Y" %}
     {% if post_year == year %}
