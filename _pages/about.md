@@ -52,7 +52,7 @@ redirect_from:
 
 <div class="about-section">
 <div class="about-body">
-Soy <strong>Profesor Titular</strong> de la Escuela de Educación de la Universidad de los Andes (Chile) y <strong>Director del Centro de Investigación en Salud Mental Estudiantil (ISME)</strong>. Soy Médico Cirujano (Pontificia Universidad Católica de Chile), Magíster en Psicología Clínica Infanto-Juvenil (Universidad de Chile), Especialista en Psiquiatría de Adultos, Doctor en Epidemiología Psiquiátrica de la University of Bristol (Reino Unido), con un postdoctorado en el Centre for Global Mental Health de la London School of Hygiene and Tropical Medicine y un Clinical Research Fellowship en Psiquiatría Infantil y del Adolescente en King's College London.
+Soy <strong>Profesor Titular</strong> de la Escuela de Educación de la <a href="https://www.uandes.cl/" target="_blank">Universidad de los Andes</a> (Chile) y <strong>Director del <a href="https://www.ismeuandes.cl/" target="_blank">Centro de Investigación en Salud Mental Estudiantil (ISME)</a></strong>. Soy Médico Cirujano (<a href="https://www.uc.cl/" target="_blank">Pontificia Universidad Católica de Chile</a>), Magíster en Psicología Clínica Infanto-Juvenil (<a href="https://www.uchile.cl/" target="_blank">Universidad de Chile</a>), Especialista en Psiquiatría de Adultos, Doctor en Epidemiología Psiquiátrica de la <a href="https://www.bristol.ac.uk/" target="_blank">University of Bristol</a> (Reino Unido), con un postdoctorado en el <a href="https://www.lshtm.ac.uk/" target="_blank">Centre for Global Mental Health de la London School of Hygiene and Tropical Medicine</a> y un Clinical Research Fellowship en Psiquiatría Infantil y del Adolescente en el <a href="https://www.kcl.ac.uk/" target="_blank">King's College London</a>.
 </div>
 </div>
 
@@ -66,10 +66,10 @@ Mi trabajo se orienta a identificar <strong>factores de riesgo y protectores</st
 <div class="about-section">
 <div class="about-header">Afiliaciones actuales</div>
 <ul class="about-list">
-<li>Director, <strong>Centro de Investigación en Salud Mental Estudiantil (ISME)</strong>, Universidad de los Andes — <a href="https://www.ismeuandes.cl">ismeuandes.cl</a></li>
-<li>Profesor Titular, <strong>Escuela de Educación</strong>, Universidad de los Andes</li>
+<li>Director, <strong><a href="https://www.ismeuandes.cl/" target="_blank">Centro de Investigación en Salud Mental Estudiantil (ISME)</a></strong>, <a href="https://www.uandes.cl/" target="_blank">Universidad de los Andes</a></li>
+<li>Profesor Titular, <strong>Escuela de Educación</strong>, <a href="https://www.uandes.cl/" target="_blank">Universidad de los Andes</a></li>
 <li>Investigador, <strong>Center for the Well-Being and Development of Adolescents and Children in the Digital Age (BAND)</strong>, Santiago, Chile</li>
-<li>Clinical Research Fellow (2025), <strong>Centre for Addiction and Mental Health (CAMH)</strong>, University of Toronto, Canadá</li>
+<li>Clinical Research Fellow (2025), <strong><a href="https://www.camh.ca/" target="_blank">Centre for Addiction and Mental Health (CAMH)</a></strong>, <a href="https://www.utoronto.ca/" target="_blank">University of Toronto</a>, Canadá</li>
 </ul>
 </div>
 
@@ -83,10 +83,10 @@ A la fecha cuento con <span class="pub-counter-badge" id="orcid-pub-count">…</
 <div class="about-section">
 <div class="about-header">Perfiles académicos</div>
 <ul class="about-list">
-<li><a href="https://orcid.org/0000-0002-6650-6018">ORCID</a></li>
-<li><a href="https://scholar.google.es/citations?user=g99obcwAAAAJ&hl=es">Google Scholar</a></li>
-<li><a href="https://www.scopus.com/authid/detail.uri?authorId=8652950300">Scopus</a></li>
-<li><a href="https://investigadores.uandes.cl/es/persons/jorge-eduardo-gaete-olivares/">Portal de Investigadores UAndes</a></li>
+<li><a href="https://orcid.org/0000-0002-6650-6018" target="_blank">ORCID</a></li>
+<li><a href="https://scholar.google.es/citations?user=g99obcwAAAAJ&hl=es" target="_blank">Google Scholar</a></li>
+<li><a href="https://www.scopus.com/authid/detail.uri?authorId=8652950300" target="_blank">Scopus</a></li>
+<li><a href="https://investigadores.uandes.cl/es/persons/jorge-eduardo-gaete-olivares/" target="_blank">Portal de Investigadores UAndes</a></li>
 </ul>
 </div>
 
