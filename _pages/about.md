@@ -21,7 +21,7 @@ Mi trabajo se orienta a identificar **factores de riesgo y protectores** para el
 - Director, **Centro de Investigación en Salud Mental Estudiantil (ISME)**, Universidad de los Andes — [ismeuandes.cl](https://www.ismeuandes.cl)
 - Profesor Titular, **Escuela de Educación**, Universidad de los Andes
 - Clinical Research Fellow (2025), **Centre for Addiction and Mental Health (CAMH)**, University of Toronto, Canadá
-- Investigador, **Núcleo Milenio para Mejorar la Salud Mental de Adolescentes y Jóvenes (IMHAY)**
+- Investigador, **Center for the Well-Being and Development of Adolescents and Children in the Digital Age (BAND)**, Santiago, Chile
 
 ## Producción científica
 
