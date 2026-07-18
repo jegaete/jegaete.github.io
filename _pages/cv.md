@@ -58,7 +58,7 @@ Más de 25 proyectos financiados por ANID (FONDECYT, FONDAP) y agencias internac
 ## Afiliaciones
 
 - Director, **Centro ISME**, Universidad de los Andes — [ismeuandes.cl](https://ismeuandes.cl)
-- Investigador, **Núcleo Milenio IMHAY** — [imhay.cl](https://imhay.cl)
+- Investigador, **Center for the Well-Being and Development of Adolescents and Children in the Digital Age (BAND)**, Santiago, Chile
 - Clinical Research Fellow (2025), **CAMH**, University of Toronto
 
 ---
