@@ -39,7 +39,7 @@ redirect_from:
 
 <h2>Producción científica</h2>
 
-<p>A la fecha cuento con más de <a href="/publications/" style="text-decoration:none;"><span class="orcid-badge"><span id="orcid-pub-count">95</span> publicaciones</span></a> en revistas científicas y he dirigido o participado como co-investigador en más de <a href="/projects/" style="text-decoration:none;"><span class="orcid-badge">{{ site.projects | size }} proyectos</span></a> de investigación financiados por la Agencia Nacional de Investigación y Desarrollo (ANID) y otras agencias nacionales e internacionales (Wellcome Trust, Academy of Finland, entre otras).</p>
+<p>A la fecha cuento con más de <a href="/publications/" style="text-decoration:none;"><span class="orcid-badge"><span id="orcid-pub-count">95</span> publicaciones</span></a> en revistas científicas y he dirigido o participado como co-investigador en más de <a href="/projects/" style="text-decoration:none;"><span class="orcid-badge"><span id="orcid-project-count">{{ site.projects | size }}</span> proyectos</span></a> de investigación financiados por la Agencia Nacional de Investigación y Desarrollo (ANID) y otras agencias nacionales e internacionales (Wellcome Trust, Academy of Finland, entre otras).</p>
 
 <h2>Perfiles académicos</h2>
 
