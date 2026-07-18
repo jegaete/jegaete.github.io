@@ -27,7 +27,7 @@ redirect_from:
 
 <p>Mi investigación se organiza en torno a dos grandes ejes. El primero es <strong>epidemiológico</strong>: identificar factores de riesgo y protectores asociados al desarrollo de suicidalidad, depresión, conductas autolesivas, violencia escolar y consumo de sustancias en niños, adolescentes y adultos jóvenes. El segundo eje es de <strong>evaluación de intervenciones</strong>: examinar la eficacia y efectividad de programas preventivos —universales, selectivos e indicados— orientados a estas mismas problemáticas e implementados principalmente en entornos escolares y universitarios, incluyendo intervenciones basadas en terapia cognitivo-conductual y programas de salud mental escolar.</p>
 
-<p>Transversalmente, me interesa comprender la <strong>heterogeneidad en las trayectorias</strong> de síntomas a lo largo del tiempo, el papel de variables psicológicas como la inflexibilidad psicológica, y los determinantes sociales y ambientales del bienestar mental en jóvenes.</p>
+<p>Transversalmente, me interesa comprender la <strong>heterogeneidad en las trayectorias</strong> de síntomas a lo largo del tiempo, el papel de variables psicológicas como la inflexibilidad psicológica y el sentido de pertenencia, y los determinantes sociales y ambientales del bienestar mental en jóvenes.</p>
 
 <h2>Afiliaciones actuales</h2>
 
