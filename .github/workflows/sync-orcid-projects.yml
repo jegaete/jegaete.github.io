@@ -1,0 +1,35 @@
+name: Sync ORCID Projects
+
+on:
+  schedule:
+    - cron: '0 6 1 * *'   # Runs on the 1st of every month at 06:00 UTC
+  workflow_dispatch:        # Also allows manual trigger from GitHub Actions tab
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Sync projects from ORCID
+        run: python .github/scripts/sync_orcid_projects.py
+
+      - name: Commit new project files
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add _projects/
+          git diff --staged --quiet && echo "No new projects." || git commit -m "chore: sync new projects from ORCID"
+          git push
