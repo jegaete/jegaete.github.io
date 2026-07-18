@@ -35,7 +35,7 @@ redirect_from:
 
 <p>Clinical Research Fellowship en Psiquiatría Infantil y del Adolescente en <a href="https://www.kcl.ac.uk" target="_blank">King's College London</a>.</p>
 
-<p>Clinical Research Fellow (2025), <strong><a href="https://www.camh.ca" target="_blank">Centre for Addiction and Mental Health (CAMH)</a></strong>, <a href="https://www.utoronto.ca" target="_blank">University of Toronto</a>, Canadá.</p>
+<p>Clinical Research Fellow, <a href="https://www.camh.ca" target="_blank">Centre for Addiction and Mental Health (CAMH)</a>, <a href="https://www.utoronto.ca" target="_blank">University of Toronto</a>, Canadá.</p>
 
 <h2>Líneas de investigación</h2>
 
