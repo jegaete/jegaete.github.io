@@ -33,16 +33,24 @@ layout: default
         {% if page.modified %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
         {% endif %}
-        
+
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.venue and page.date %}
           <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
-        {% endif %}    
+        {% endif %}
         </header>
       {% endunless %}
+
+      {% if page.collection == 'projects' %}
+      <div style="margin-bottom: 1.2rem;">
+        <a href="/projects/" style="display:inline-flex;align-items:center;gap:6px;font-size:0.82rem;color:#2a5db0;text-decoration:none;border:1px solid #c5d3ea;border-radius:4px;padding:5px 12px;background:#f0f4fb;">
+          &#8592; Volver a Proyectos
+        </a>
+      </div>
+      {% endif %}
 
       <section class="page__content" itemprop="text">
         {{ content }}
