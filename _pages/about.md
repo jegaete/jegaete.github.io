@@ -35,19 +35,13 @@ redirect_from:
 
 <p>Clinical Research Fellowship en Psiquiatría Infantil y del Adolescente en <a href="https://www.kcl.ac.uk" target="_blank">King's College London</a>.</p>
 
+<p>Clinical Research Fellow (2025), <strong><a href="https://www.camh.ca" target="_blank">Centre for Addiction and Mental Health (CAMH)</a></strong>, <a href="https://www.utoronto.ca" target="_blank">University of Toronto</a>, Canadá.</p>
+
 <h2>Líneas de investigación</h2>
 
 <p>Su investigación se organiza en torno a dos grandes ejes. El primero es <strong>epidemiológico</strong>: identificar factores de riesgo y protectores asociados al desarrollo de suicidalidad, depresión, conductas autolesivas, violencia escolar y consumo de sustancias en niños, adolescentes y adultos jóvenes. El segundo eje es de <strong>evaluación de intervenciones</strong>: examinar la eficacia y efectividad de programas preventivos —universales, selectivos e indicados— orientados a estas mismas problemáticas e implementados principalmente en entornos escolares y universitarios, incluyendo intervenciones basadas en terapia cognitivo-conductual y programas de salud mental escolar.</p>
 
 <p>Transversalmente, su trabajo busca comprender la <strong>heterogeneidad en las trayectorias</strong> de síntomas a lo largo del tiempo, el papel de variables psicológicas como la inflexibilidad psicológica y el sentido de pertenencia, y los determinantes sociales y ambientales del bienestar mental en jóvenes.</p>
-
-<h2>Afiliaciones actuales</h2>
-
-<ul>
-<li>Director, <strong><a href="https://www.ismeuandes.cl" target="_blank">Centro de Investigación en Salud Mental Estudiantil (ISME)</a></strong>, <a href="https://www.uandes.cl" target="_blank">Universidad de los Andes</a></li>
-<li>Profesor Titular, <strong>Escuela de Educación</strong>, <a href="https://www.uandes.cl" target="_blank">Universidad de los Andes</a></li>
-<li>Clinical Research Fellow (2025), <strong><a href="https://www.camh.ca" target="_blank">Centre for Addiction and Mental Health (CAMH)</a></strong>, <a href="https://www.utoronto.ca" target="_blank">University of Toronto</a>, Canadá</li>
-</ul>
 
 <h2>Producción científica</h2>
 
