@@ -79,7 +79,7 @@ author_profile: true
     {% if p_year == year %}{% assign year_count = year_count | plus: 1 %}{% endif %}
   {% endfor %}
   <div class="pub-year-section">
-  <div class="pub-year-header">{{ year }}<span class="pub-year-count">{{ year_count }} publicaciones</span></div>
+  <div class="pub-year-header">{{ year }}<span class="pub-year-count">({{ year_count }} publicaciones)</span></div>
   {% for post in sorted_pubs %}
     {% assign post_year = post.date | date: "%Y" %}
     {% if post_year == year %}
