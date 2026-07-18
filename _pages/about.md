@@ -70,5 +70,17 @@ redirect_from:
     if (el && count !== null) el.textContent = count;
   })
   .catch(function() {});
+
+  fetch('https://pub.orcid.org/v3.0/0000-0002-6650-6018/fundings', {
+    headers: { 'Accept': 'application/json' },
+    cache: 'no-store'
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(data) {
+    var count = data.group ? data.group.length : null;
+    var el = document.getElementById('orcid-project-count');
+    if (el && count !== null) el.textContent = count;
+  })
+  .catch(function() {});
 })();
 </script>
