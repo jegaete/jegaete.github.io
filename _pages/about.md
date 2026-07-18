@@ -53,7 +53,7 @@ redirect_from:
 <h2>Contacto</h2>
 
 <p>📧 <a href="mailto:jgaete@uandes.cl">jgaete@uandes.cl</a><br>
-📍 Facultad de Educación, <a href="https://www.uandes.cl" target="_blank">Universidad de los Andes</a>, Monseñor Álvaro del Portillo 12455, Las Condes, Santiago, Chile.</p>
+📍 Escuela de Educación, <a href="https://www.uandes.cl" target="_blank">Universidad de los Andes</a>, Monseñor Álvaro del Portillo 12455, Las Condes, Santiago, Chile.</p>
 
 </div>
 
