@@ -33,6 +33,8 @@ author_profile: true
   color: #222;
   margin-bottom: 0.2rem;
 }
+.proj-title a { color: #222; text-decoration: none; }
+.proj-title a:hover { color: #2a5db0; text-decoration: underline; }
 .proj-meta {
   font-size: 0.80rem;
   color: #555;
@@ -56,6 +58,14 @@ author_profile: true
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
+.proj-website {
+  font-size: 0.75rem;
+  color: #2a5db0;
+  text-decoration: none;
+  margin-left: 8px;
+  font-weight: 400;
+}
+.proj-website:hover { text-decoration: underline; }
 </style>
 
 {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
@@ -71,8 +81,9 @@ author_profile: true
   {% endif %}
   <div class="proj-item">
     <div class="proj-title">
-      {{ post.title }}
+      <a href="{{ post.url }}">{{ post.title }}</a>
       {% if post.status == "active" %}<span class="proj-status-active">Activo</span>{% endif %}
+      {% if post.website %}<a href="{{ post.website }}" target="_blank" class="proj-website">↗ Sitio web</a>{% endif %}
     </div>
     {% if post.years %}<div class="proj-meta">{{ post.years }}{% if post.funder %} · {{ post.funder }}{% endif %}</div>{% endif %}
     {% if post.role %}<div class="proj-role">Rol: {{ post.role }}</div>{% endif %}
