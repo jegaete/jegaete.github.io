@@ -23,7 +23,17 @@ redirect_from:
 
 <p>Soy <strong>Profesor Titular</strong> de la Escuela de Educación de la <a href="https://www.uandes.cl" target="_blank">Universidad de los Andes</a> (Chile) y <strong>Director del <a href="https://www.ismeuandes.cl" target="_blank">Centro de Investigación en Salud Mental Estudiantil (ISME)</a></strong>.</p>
 
-<p>Soy Médico Cirujano (<a href="https://www.uc.cl" target="_blank">Pontificia Universidad Católica de Chile</a>), Magíster en Psicología Clínica Infanto-Juvenil (<a href="https://www.uchile.cl" target="_blank">Universidad de Chile</a>), Especialista en Psiquiatría de Adultos, Doctor en Epidemiología Psiquiátrica de la <a href="https://www.bristol.ac.uk" target="_blank">University of Bristol</a> (Reino Unido), con un postdoctorado en el <a href="https://www.lshtm.ac.uk" target="_blank">Centre for Global Mental Health de la London School of Hygiene and Tropical Medicine</a> y un Clinical Research Fellowship en Psiquiatría Infantil y del Adolescente en <a href="https://www.kcl.ac.uk" target="_blank">King's College London</a>.</p>
+<p>Soy Médico Cirujano (<a href="https://www.uc.cl" target="_blank">Pontificia Universidad Católica de Chile</a>).</p>
+
+<p>Magíster en Psicología Clínica Infanto-Juvenil (<a href="https://www.uchile.cl" target="_blank">Universidad de Chile</a>).</p>
+
+<p>Especialista en Psiquiatría de Adultos.</p>
+
+<p>Doctor (PhD) en Epidemiología Psiquiátrica de la <a href="https://www.bristol.ac.uk" target="_blank">University of Bristol</a> (Reino Unido).</p>
+
+<p>Postdoctorado en el <a href="https://www.lshtm.ac.uk" target="_blank">Centre for Global Mental Health de la London School of Hygiene and Tropical Medicine</a>.</p>
+
+<p>Clinical Research Fellowship en Psiquiatría Infantil y del Adolescente en <a href="https://www.kcl.ac.uk" target="_blank">King's College London</a>.</p>
 
 <h2>Líneas de investigación</h2>
 
