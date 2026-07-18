@@ -1,12 +1,17 @@
 import requests
 import os
 import re
+import unicodedata
 from datetime import datetime
 
 ORCID_ID = "0000-0002-6650-6018"
 PROJECTS_DIR = "_projects"
+STUB_MARKER = "*Descripción pendiente."
 
-def slugify(text, max_length=55):
+def slugify(text, max_length=50):
+    # Normalize to ASCII (removes accents: á→a, ñ→n, etc.)
+    text = unicodedata.normalize('NFKD', text)
+    text = text.encode('ascii', 'ignore').decode('ascii')
     text = text.lower()
     text = re.sub(r'[^\w\s-]', '', text)
     text = re.sub(r'[\s_-]+', '-', text)
@@ -25,10 +30,11 @@ def main():
     data = resp.json()
 
     os.makedirs(PROJECTS_DIR, exist_ok=True)
-    existing_files = set(os.listdir(PROJECTS_DIR))
-
     current_year = datetime.now().year
-    new_count = 0
+
+    # Build the canonical set of filenames from ORCID
+    orcid_projects = []
+    correct_filenames = set()
 
     for group in data.get('group', []):
         grant_number = get_grant_number(group.get('external-ids', {}))
@@ -41,30 +47,49 @@ def main():
             end   = summary.get('end-date') or {}
             start_year = (start.get('year') or {}).get('value', '')
             end_year   = (end.get('year')   or {}).get('value', '')
-
             funder = (summary.get('organization') or {}).get('name', '')
-            role   = ''  # ORCID doesn't expose role directly; leave blank
 
             year = start_year or '2000'
             slug = slugify(title)
             filename = f"{year}-{slug}.md"
+            correct_filenames.add(filename)
+            orcid_projects.append((filename, title, year, start_year, end_year, funder, grant_number))
 
-            # Skip if file already exists (preserves manual edits)
-            if filename in existing_files:
-                print(f"Skipped (exists): {filename}")
-                continue
+    # --- Cleanup: delete auto-generated stubs that no longer match any ORCID slug ---
+    existing_files = set(os.listdir(PROJECTS_DIR))
+    deleted_count = 0
+    for fname in list(existing_files):
+        if fname in correct_filenames:
+            continue
+        filepath = os.path.join(PROJECTS_DIR, fname)
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                content = f.read()
+            if STUB_MARKER in content:
+                os.remove(filepath)
+                print(f"Deleted stale stub: {fname}")
+                deleted_count += 1
+        except Exception as e:
+            print(f"Error reading {fname}: {e}")
 
-            years_str = f"{start_year}–{end_year}" if end_year else start_year
-            is_active = end_year and int(end_year) >= current_year
-            status = "active" if is_active else "completed"
+    # --- Create stubs for new projects not yet in the repo ---
+    existing_files = set(os.listdir(PROJECTS_DIR))
+    new_count = 0
 
-            excerpt = f"{funder} ({years_str})" if funder else years_str
+    for filename, title, year, start_year, end_year, funder, grant_number in orcid_projects:
+        if filename in existing_files:
+            print(f"Skipped (exists): {filename}")
+            continue
 
-            # Escape quotes in title for YAML
-            title_safe = title.replace('"', '\\"')
-            funder_safe = funder.replace('"', '\\"')
+        years_str = f"{start_year}–{end_year}" if end_year else start_year
+        is_active = end_year and int(end_year) >= current_year
+        status = "active" if is_active else "completed"
+        excerpt = f"{funder} ({years_str})" if funder else years_str
+        title_safe = title.replace('"', '\\"')
+        funder_safe = funder.replace('"', '\\"')
+        slug = slugify(title)
 
-            content = f"""---
+        content = f"""---
 title: "{title_safe}"
 collection: projects
 permalink: /projects/{year}-{slug}/
@@ -76,17 +101,15 @@ funder: "{funder_safe}"
 grant_number: "{grant_number}"
 ---
 
-*Descripción pendiente. Editar este archivo para agregar información del proyecto.*
+{STUB_MARKER} Editar este archivo para agregar información del proyecto.*
 """
+        filepath = os.path.join(PROJECTS_DIR, filename)
+        with open(filepath, 'w', encoding='utf-8') as f:
+            f.write(content)
+        print(f"Created: {filename}")
+        new_count += 1
 
-            filepath = os.path.join(PROJECTS_DIR, filename)
-            with open(filepath, 'w', encoding='utf-8') as f:
-                f.write(content)
-
-            print(f"Created: {filename}")
-            new_count += 1
-
-    print(f"\nDone. {new_count} new project(s) created.")
+    print(f"\nDone. Deleted {deleted_count} stale stub(s), created {new_count} new project(s).")
 
 if __name__ == '__main__':
     main()
