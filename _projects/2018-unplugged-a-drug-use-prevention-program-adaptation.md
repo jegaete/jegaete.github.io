@@ -19,7 +19,7 @@ El proyecto tuvó como objetivo adaptar y evaluar la efectividad del programa eu
 **Financiamiento:** ANID — Fondecyt Regular Nº 1181724
 **Período:** 2018–2021
 **Rol:** Investigador Principal (PI)
-**Presupuesto:** US$ 378.000
+**Presupuesto aprobado:** US$ 378.000
 **ClinicalTrials.gov:** NCT04236999 y NCT04566627
 
 🌐 <a href="https://jegaete.github.io/unplugged-chile" target="_blank">Sitio web del proyecto</a>
