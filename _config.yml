@@ -3,7 +3,7 @@ locale                   : "es-ES"
 title                    : "Jorge Gaete — Investigación"
 title_separator          : "-"
 name                     : "Jorge Gaete"
-description              : "Sitio personal del Dr. Jorge Gaete, Facultad de Ciencias Sociales, Universidad de los Andes."
+description              : "Sitio personal del Dr. Jorge E. Gaete Olivares, Profesor Titular y Director del Centro ISME, Escuela de Educación, Facultad de Ciencias Sociales, Universidad de los Andes (Chile). Investigación en salud mental estudiantil, epidemiología psiquiátrica y prevención en entornos escolares."
 url                      : "https://jegaete.github.io"
 baseurl                  : ""
 repository               : "jegaete/jegaete.github.io"
@@ -12,7 +12,7 @@ repository               : "jegaete/jegaete.github.io"
 author:
   name             : "Jorge Gaete"
   avatar           : "profile2024.png"
-  bio              : "Profesor/Investigador, Facultad de Ciencias Sociales, Universidad de los Andes (Chile)."
+  bio              : "Profesor/Investigador, Escuela de Educación, Facultad de Ciencias Sociales, Universidad de los Andes (Chile)."
   location         : "Santiago, Chile"
   employer         : "Universidad de los Andes"
   email            : "jgaete@uandes.cl"
@@ -119,13 +119,13 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
+og_image                 : "images/profile2024.png"  # Social media default site image
+og_description           : "Dr. Jorge E. Gaete Olivares — Investigador en salud mental estudiantil, Universidad de los Andes (Chile)."  # Social media default description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type                   : Person
+  name                   : "Jorge Eduardo Gaete Olivares"
   links: # An array of links to social media profiles
 
 
