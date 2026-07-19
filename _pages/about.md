@@ -56,11 +56,6 @@ redirect_from:
 <li><a href="https://investigadores.uandes.cl/es/persons/jorge-eduardo-gaete-olivares/" target="_blank">Portal de Investigadores UAndes</a></li>
 </ul>
 
-<h2>Noticias y Destacados</h2>
-<ul>
-<li><strong>Julio 2026</strong> — Entrevista en <a href="https://www.cooperativa.cl" target="_blank">Radio Cooperativa</a> sobre salud mental en estudiantes universitarios.</li>
-<li><strong>Agosto 2026</strong> — Participación como ponente invitado en congreso internacional. Más detalles próximamente.</li>
-</ul>
 <h2>Contacto</h2>
 
 <p><strong>Email:</strong> <a href="mailto:jgaete@uandes.cl">jgaete@uandes.cl</a><br>
