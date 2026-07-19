@@ -56,10 +56,16 @@ redirect_from:
 <li><a href="https://investigadores.uandes.cl/es/persons/jorge-eduardo-gaete-olivares/" target="_blank">Portal de Investigadores UAndes</a></li>
 </ul>
 
+<h2>Noticias y Destacados</h2>
+<ul>
+<li><strong>Julio 2026</strong> — Entrevista en <a href="https://www.cooperativa.cl" target="_blank">Radio Cooperativa</a> sobre salud mental en estudiantes universitarios.</li>
+<li><strong>Agosto 2026</strong> — Participación como ponente invitado en congreso internacional. Más detalles próximamente.</li>
+</ul>
 <h2>Contacto</h2>
 
 <p><strong>Email:</strong> <a href="mailto:jgaete@uandes.cl">jgaete@uandes.cl</a><br>
 <strong>Dirección Postal:</strong> Escuela de Educación, <a href="https://www.uandes.cl" target="_blank">Universidad de los Andes</a>, Monseñor Álvaro del Portillo 12455, Las Condes, Santiago, Chile.</p>
+<p><a href="/files/202606_EnglishCV_Jorge%20Gaete.pdf" target="_blank" style="display:inline-block;background:#2a5db0;color:#fff;padding:6px 14px;border-radius:4px;font-size:0.82rem;font-weight:600;text-decoration:none;">⬇ Descargar CV (PDF)</a></p>
 
 </div>
 
