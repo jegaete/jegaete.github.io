@@ -12,6 +12,7 @@ author_profile: true
 .news-body .tag { display: inline-block; background: #f0f4fb; border: 1px solid #c5d3ea; border-radius: 4px; padding: 1px 8px; font-size: 0.78rem; color: #2a5db0; font-weight: 600; margin-right: 6px; }
 .news-body a { color: #2a5db0; text-decoration: none; }
 .news-body a:hover { text-decoration: underline; }
+.news-body { min-height: 60vh; }
 </style>
 
 <div class="news-body">
