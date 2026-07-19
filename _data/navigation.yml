@@ -2,7 +2,11 @@
 main:
   - title: "Sobre mí"
     url: /
+  - title: "Noticias"
+    url: /news/
   - title: "Publicaciones"
     url: /publications/
   - title: "Proyectos"
     url: /projects/
+  - title: "CV"
+    url: /cv/
