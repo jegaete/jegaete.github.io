@@ -16,9 +16,6 @@ website: "https://jegaete.github.io/unplugged-chile"
 
 El proyecto tuvo como objetivo adaptar y evaluar la efectividad del programa europeo de prevención del consumo de drogas **Unplugged** en el contexto escolar chileno. Se realizó un ensayo controlado aleatorizado por conglomerados en 68 establecimientos municipales y subvencionados de Santiago, con 9.055 estudiantes de 6° y 7° básico (ClinicalTrials.gov: NCT04236999 y NCT04566627).
 
-**Financiamiento:** ANID — Fondecyt Regular Nº 1181724  
-**Período:** 2018–2021  
-**Rol:** Investigador Principal (PI)  
-**Presupuesto aprobado:** US$ 378.000
+**Financiamiento:** ANID — Fondecyt Regular Nº 1181724<br>**Período:** 2018–2021<br>**Rol:** Investigador Principal (PI)<br>**Presupuesto aprobado:** US$ 378.000
 
 🌐 [Sitio web del proyecto](https://jegaete.github.io/unplugged-chile)
