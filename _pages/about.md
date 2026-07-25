@@ -49,6 +49,33 @@ redirect_from:
 
 <p>Cuenta con más de <a href="/publications/" style="text-decoration:none;"><span class="orcid-badge"><span id="orcid-pub-count">95</span> publicaciones</span></a> en revistas científicas y ha dirigido o participado como co-investigador en más de <a href="/projects/" style="text-decoration:none;"><span class="orcid-badge"><span id="orcid-project-count">{{ site.projects | size }}</span> proyectos</span></a> de investigación financiados por la Agencia Nacional de Investigación y Desarrollo (ANID) y otras agencias nacionales e internacionales (Wellcome Trust, Academy of Finland, entre otras).</p>
 
+
+<h2>Impacto académico</h2>
+
+<p>Según <a href="https://scholar.google.es/citations?user=g99obcwAAAAJ" target="_blank">Google Scholar</a> (julio 2026):</p>
+
+<table style="border-collapse:collapse; margin-bottom:1em;">
+<thead>
+<tr><th style="padding:6px 16px 6px 0; border-bottom:1px solid #ccc;">Indicador</th><th style="padding:6px 16px 6px 0; border-bottom:1px solid #ccc; text-align:right;">Total</th><th style="padding:6px 0; border-bottom:1px solid #ccc; text-align:right;">Últimos 5 años</th></tr>
+</thead>
+<tbody>
+<tr><td style="padding:4px 16px 4px 0;">Citas</td><td style="padding:4px 16px 4px 0; text-align:right;"><strong>3.066</strong></td><td style="padding:4px 0; text-align:right;">1.808</td></tr>
+<tr><td style="padding:4px 16px 4px 0;">Índice h</td><td style="padding:4px 16px 4px 0; text-align:right;"><strong>30</strong></td><td style="padding:4px 0; text-align:right;">23</td></tr>
+<tr><td style="padding:4px 16px 4px 0;">Índice i10</td><td style="padding:4px 16px 4px 0; text-align:right;"><strong>63</strong></td><td style="padding:4px 0; text-align:right;">53</td></tr>
+</tbody>
+</table>
+
+<h2>Publicaciones recientes</h2>
+
+<ul>
+<li>Gaete J, et al. Six-month follow-up of the ‘Mi Mejor Plan’ school-based prevention program. <em>BMC Public Health</em>. 2026. <a href="https://doi.org/10.1186/s12889-026-28548-x" target="_blank">DOI</a></li>
+<li>Gaete J, et al. Japi 2.0, a gaming platform to stimulate cognitive and socio-emotional skills in early childhood: results of a pilot RCT. <em>Child Adolesc Psychiatry Ment Health</em>. 2026. <a href="https://doi.org/10.1186/s13034-026-01133-1" target="_blank">DOI</a></li>
+<li>Crockett MA, et al. Persistence and Incidence of Suicidal Ideation Among LGBTQ+ University Students. <em>J Homosexuality</em>. 2026. <a href="https://doi.org/10.1080/00918369.2026.2689722" target="_blank">DOI</a></li>
+<li>Gaete J, et al. Scaling Up a Blended School-Based Suicide Prevention Program (Reframe-IT+). <em>Arch Suicide Res</em>. 2026. <a href="https://doi.org/10.1080/13811118.2026.2672043" target="_blank">DOI</a></li>
+</ul>
+
+<p><a href="/publications/">Ver todas las publicaciones →</a></p>
+
 <h2>Perfiles académicos</h2>
 
 <ul>
