@@ -37,6 +37,8 @@ redirect_from:
 
 <p>Clinical Research Fellow, <a href="https://www.camh.ca" target="_blank">Centre for Addiction and Mental Health (CAMH)</a>, <a href="https://www.utoronto.ca" target="_blank">University of Toronto</a>, Canadá.</p>
 
+<p>Investigador Adjunto, <strong>Centro para el Bienestar y Desarrollo de la Adolescencia y Niñez en la era Digital</strong>.</p>
+
 <h2>Líneas de investigación</h2>
 
 <p>Su investigación se organiza en torno a dos grandes ejes. El primero es <strong>epidemiológico</strong>: identificar factores de riesgo y protectores asociados al desarrollo de suicidalidad, depresión, conductas autolesivas, violencia escolar y consumo de sustancias en niños, adolescentes y adultos jóvenes. El segundo eje es de <strong>evaluación de intervenciones</strong>: examinar la eficacia y efectividad de programas preventivos —universales, selectivos e indicados— orientados a estas mismas problemáticas e implementados principalmente en entornos escolares y universitarios, incluyendo intervenciones basadas en terapia cognitivo-conductual y programas de salud mental escolar.</p>
