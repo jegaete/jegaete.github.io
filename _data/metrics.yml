@@ -1,0 +1,10 @@
+# Métricas de citación — actualizadas automáticamente desde OpenAlex
+# Fuente: https://api.openalex.org/authors/https://orcid.org/0000-0002-6650-6018
+# Nota: OpenAlex indexa principalmente publicaciones en acceso abierto;
+#        los números son menores que Google Scholar pero se actualizan solos.
+
+cited_by_count: 1880
+h_index: 21
+i10_index: 43
+cited_last5: 562
+last_updated: "2026-07-26"
