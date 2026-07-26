@@ -1,6 +1,7 @@
 # Site Settings
 locale                   : "es-ES"
 title                    : "Jorge Gaete — Investigación"
+site_theme               : "air"
 title_separator          : "-"
 name                     : "Jorge Gaete"
 description              : "Sitio personal del Dr. Jorge E. Gaete Olivares, Profesor Titular y Director del Centro ISME, Escuela de Educación, Escuela de Educación, Universidad de los Andes (Chile). Investigación en salud mental estudiantil, epidemiología psiquiátrica y prevención en entornos escolares."
