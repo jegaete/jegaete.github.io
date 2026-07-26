@@ -52,16 +52,16 @@ redirect_from:
 
 <h2>Impacto académico</h2>
 
-<p>Según <a href="https://scholar.google.es/citations?user=g99obcwAAAAJ" target="_blank">Google Scholar</a> (julio 2026):</p>
+<p>Fuente: <a href="https://openalex.org" target="_blank">OpenAlex</a> — actualizado automáticamente. Última actualización: {{ site.data.metrics.last_updated }}. Para el registro completo, consulta <a href="https://scholar.google.es/citations?user=g99obcwAAAAJ" target="_blank">Google Scholar</a>.</p>
 
 <table style="border-collapse:collapse; margin-bottom:1em;">
 <thead>
 <tr><th style="padding:6px 16px 6px 0; border-bottom:1px solid #ccc;">Indicador</th><th style="padding:6px 16px 6px 0; border-bottom:1px solid #ccc; text-align:right;">Total</th><th style="padding:6px 0; border-bottom:1px solid #ccc; text-align:right;">Últimos 5 años</th></tr>
 </thead>
 <tbody>
-<tr><td style="padding:4px 16px 4px 0;">Citas</td><td style="padding:4px 16px 4px 0; text-align:right;"><strong>3.066</strong></td><td style="padding:4px 0; text-align:right;">1.808</td></tr>
-<tr><td style="padding:4px 16px 4px 0;">Índice h</td><td style="padding:4px 16px 4px 0; text-align:right;"><strong>30</strong></td><td style="padding:4px 0; text-align:right;">23</td></tr>
-<tr><td style="padding:4px 16px 4px 0;">Índice i10</td><td style="padding:4px 16px 4px 0; text-align:right;"><strong>63</strong></td><td style="padding:4px 0; text-align:right;">53</td></tr>
+<tr><td style="padding:4px 16px 4px 0;">Citas</td><td style="padding:4px 16px 4px 0; text-align:right;"><strong>{{ site.data.metrics.cited_by_count }}</strong></td><td style="padding:4px 0; text-align:right;">{{ site.data.metrics.cited_last5 }}</td></tr>
+<tr><td style="padding:4px 16px 4px 0;">Índice h</td><td style="padding:4px 16px 4px 0; text-align:right;"><strong>{{ site.data.metrics.h_index }}</strong></td><td style="padding:4px 0; text-align:right;">—</td></tr>
+<tr><td style="padding:4px 16px 4px 0;">Índice i10</td><td style="padding:4px 16px 4px 0; text-align:right;"><strong>{{ site.data.metrics.i10_index }}</strong></td><td style="padding:4px 0; text-align:right;">—</td></tr>
 </tbody>
 </table>
 
