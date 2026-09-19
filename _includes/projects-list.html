@@ -47,11 +47,12 @@
     {% assign end_year = years_txt | split: "–" | last | strip | plus: 0 %}
     {% assign is_stub = false %}
     {% if post.content contains "Descripción pendiente" %}{% assign is_stub = true %}{% endif %}
+    {% assign ptitle = post.title %}{% if lang == "en" and post.title_en %}{% assign ptitle = post.title_en %}{% endif %}
     {% assign role_txt = post.role | append: "" %}
     {% assign role_tr = t.roles[role_txt] | default: role_txt %}
     <div class="proj-item">
       <div class="proj-title">
-        {% if is_stub %}{{ post.title }}{% else %}<a href="{{ post.url | relative_url }}">{{ post.title }}</a>{% endif %}
+        {% if is_stub %}{{ ptitle }}{% else %}<a href="{{ post.url | relative_url }}">{{ ptitle }}</a>{% endif %}
         {% if group == 1 and end_year >= this_year %}<span class="proj-status-active">{{ t.proj_active }}</span>{% endif %}
         {% if post.website %}<a href="{{ post.website }}" target="_blank" rel="noopener" class="proj-website">&#8599; {{ t.proj_website }}</a>{% endif %}
       </div>
