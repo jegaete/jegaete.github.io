@@ -23,6 +23,18 @@ exclude_put_codes:
 # DOI que no se muestran (opcional).
 exclude_dois: []
 
+# Autores corregidos a mano cuando Crossref tiene la lista incompleta.
+# DOI -> autores en orden ("Apellido, Iniciales").
+author_overrides:
+  # La lista original omitió a J. Gaete; se corrigió con una fe de erratas (10.1186/1471-244X-13-269).
+  "10.1186/1471-244x-13-122":
+    - "Araya, R."
+    - "Montero-Marin, J."
+    - "Barroilhet, S."
+    - "Fritsch, R."
+    - "Gaete, J."
+    - "Montgomery, A."
+
 # Publicaciones que no están en ORCID y se agregan a mano.
 # authors: "Apellido, Nombre" (o iniciales), en orden.
 manual:
