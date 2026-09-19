@@ -1,6 +1,7 @@
 ---
 title: "Alβan Scholarship"
 collection: projects
+type: award
 permalink: /projects/2005-alan-scholarship/
 excerpt: "European Commission (2005–2007)"
 date: 2005-01-01

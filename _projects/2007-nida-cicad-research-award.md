@@ -1,6 +1,7 @@
 ---
 title: "NIDA-CICAD Research Award"
 collection: projects
+type: award
 permalink: /projects/2007-nida-cicad-research-award/
 excerpt: "NIDA-CICAD (2007–2007)"
 date: 2007-01-01
