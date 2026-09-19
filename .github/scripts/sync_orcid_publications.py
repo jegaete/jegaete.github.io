@@ -27,6 +27,7 @@ UA = "jegaete.github.io publications sync (mailto:jgaete@uandes.cl)"
 ORCID_HEADERS = {"Accept": "application/json", "User-Agent": UA}
 
 SESSION = requests.Session()
+AUTHOR_OVERRIDES = {}   # DOI -> lista de autores ("Apellido, N."), desde la configuración
 
 
 # ---------------------------------------------------------------------------
@@ -225,7 +226,9 @@ def date_parts(msg):
 # ---------------------------------------------------------------------------
 def entry_from_crossref(work, msg):
     names = []
-    for a in msg.get("author") or []:
+    if work["doi"] in AUTHOR_OVERRIDES:
+        names = [apa_name(*split_name(a)) for a in AUTHOR_OVERRIDES[work["doi"]]]
+    for a in ([] if names else (msg.get("author") or [])):
         if a.get("family"):
             names.append(apa_name(a["family"], a.get("given", "")))
         elif a.get("name"):
@@ -292,6 +295,8 @@ def main():
     exclude_codes = {int(x) for x in (cfg.get("exclude_put_codes") or [])}
     exclude_dois = {normalize_doi(x) for x in (cfg.get("exclude_dois") or [])}
     exclude_types = set(cfg.get("exclude_types") or ["preprint"])
+    for doi, authors in (cfg.get("author_overrides") or {}).items():
+        AUTHOR_OVERRIDES[normalize_doi(doi)] = list(authors or [])
 
     works = fetch_orcid_works()
     print(f"ORCID: {len(works)} trabajos")
