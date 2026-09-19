@@ -19,6 +19,11 @@ redirect_from:
 .about-body a { color: #2a5db0; text-decoration: none; }
 .about-body a:hover { text-decoration: underline; }
 .orcid-badge { display: inline-block; background: #f0f4fb; border: 1px solid #c5d3ea; border-radius: 4px; padding: 2px 8px; font-size: 0.78rem; color: #2a5db0; font-weight: 600; }
+.metrics-table { border-collapse: collapse; border: 0; margin: 0.4rem 0 1rem; font-size: 0.85rem; width: auto; display: table; }
+.metrics-table thead, .metrics-table thead tr, .metrics-table th { background: #f0f4fb; color: #333; }
+.metrics-table th { font-weight: 700; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.metrics-table th, .metrics-table td { padding: 6px 18px 6px 10px; border: 0; border-bottom: 1px solid #e0e0e0; }
+.metrics-table .num { text-align: right; }
 </style>
 
 <div class="about-body">
@@ -56,14 +61,14 @@ redirect_from:
 
 <p>Fuente: <a href="https://openalex.org" target="_blank">OpenAlex</a> — actualizado automáticamente. Última actualización: {{ site.data.metrics.last_updated }}. Para el registro completo, consulta <a href="https://scholar.google.es/citations?user=g99obcwAAAAJ" target="_blank">Google Scholar</a>.</p>
 
-<table style="border-collapse:collapse; margin-bottom:1em;">
+<table class="metrics-table">
 <thead>
-<tr><th style="padding:6px 16px 6px 0; border-bottom:1px solid #ccc;">Indicador</th><th style="padding:6px 16px 6px 0; border-bottom:1px solid #ccc; text-align:right;">Total</th><th style="padding:6px 0; border-bottom:1px solid #ccc; text-align:right;">Últimos 5 años</th></tr>
+<tr><th>Indicador</th><th class="num">Total</th><th class="num">Últimos 5 años</th></tr>
 </thead>
 <tbody>
-<tr><td style="padding:4px 16px 4px 0;">Citas</td><td style="padding:4px 16px 4px 0; text-align:right;"><strong>{{ site.data.metrics.cited_by_count }}</strong></td><td style="padding:4px 0; text-align:right;">{{ site.data.metrics.cited_last5 }}</td></tr>
-<tr><td style="padding:4px 16px 4px 0;">Índice h</td><td style="padding:4px 16px 4px 0; text-align:right;"><strong>{{ site.data.metrics.h_index }}</strong></td><td style="padding:4px 0; text-align:right;">—</td></tr>
-<tr><td style="padding:4px 16px 4px 0;">Índice i10</td><td style="padding:4px 16px 4px 0; text-align:right;"><strong>{{ site.data.metrics.i10_index }}</strong></td><td style="padding:4px 0; text-align:right;">—</td></tr>
+<tr><td>Citas</td><td class="num"><strong>{{ site.data.metrics.cited_by_count }}</strong></td><td class="num">{{ site.data.metrics.cited_last5 }}</td></tr>
+<tr><td>Índice h</td><td class="num"><strong>{{ site.data.metrics.h_index }}</strong></td><td class="num">—</td></tr>
+<tr><td>Índice i10</td><td class="num"><strong>{{ site.data.metrics.i10_index }}</strong></td><td class="num">—</td></tr>
 </tbody>
 </table>
 
