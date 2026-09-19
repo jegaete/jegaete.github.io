@@ -8,6 +8,12 @@ years: "2026–2026"
 status: active
 funder: "Fundación Crecer y Sanar"
 grant_number: ""
+website: "https://jegaete.github.io/crecer-y-sanar/"
 ---
 
-*Descripción pendiente. Editar este archivo para agregar información del proyecto.*
+
+Aceptabilidad, factibilidad, fidelidad y exploración de la eficacia de un modelo de atención estratificada que combina **Reframe-IT+** (intervención escolar para la ideación suicida) y **CARIBOU** (ruta de atención integrada para adolescentes con depresión en atención primaria).
+
+**Financiamiento:** Fundación Crecer y Sanar (donación, CLP 98.000.000)<br>**Período:** 2026
+
+[Sitio web del proyecto →](https://jegaete.github.io/crecer-y-sanar/)

@@ -9,10 +9,11 @@ status: active
 funder: "ANID — Fondecyt Regular"
 role: "Co-Investigator"
 project_number: 2
+website: "https://jegaete.github.io/icps/"
 ---
 
 **Período:** 2026-2030
 **Financiamiento:** ANID — Fondecyt Regular
 **Rol:** Co-Investigator
 
-National Agency of Research and Development (ANID). Fondecyt Regular Nº “Estimulación temprana de habilidades regulatorias claves del desarrollo cognitivo, emocional y social: enriqueciendo la etapa de educación parvularia” [Early stimulation of key regulatory skills for cognitive, emotional, and social development: enriching the preschool education stage]. Co-Investigator: Jorge Gaete (Universidad de los Andes). Budget Approved: CL$ 202.000.000 (US$ 220,588.56).
+National Agency of Research and Development (ANID). Fondecyt Regular Nº 1260663 “Estimulación temprana de habilidades regulatorias claves del desarrollo cognitivo, emocional y social: enriqueciendo la etapa de educación parvularia” [Early stimulation of key regulatory skills for cognitive, emotional, and social development: enriching the preschool education stage]. Co-Investigator: Jorge Gaete (Universidad de los Andes). Budget Approved: CL$ 202.000.000 (US$ 220,588.56).
