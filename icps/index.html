@@ -286,7 +286,16 @@
     .note { font-size: 0.82rem; color: var(--text-muted); margin-top: 1.4rem; }
     .pub-group { font-size: 1rem; font-weight: 700; color: var(--primary); margin: 0 0 1rem; }
     .pub-list + .pub-group { margin-top: 2.2rem; }
+    .pilot-stats { grid-template-columns: repeat(4, 1fr); }
+    @media (max-width: 760px) { .pilot-stats { grid-template-columns: 1fr 1fr; } }
+    .note a, .info-card p a { color: var(--primary-light); }
 
+    .nav-brand, .nav-links a { white-space: nowrap; }
+    @media (max-width: 900px) {
+      .nav-links { display: none; flex-direction: column; position: absolute; top: 58px; left: 0; right: 0; background: var(--hero-bg); padding: 1rem; gap: 0.4rem; }
+      .nav-links.open { display: flex; }
+      .hamburger { display: flex; }
+    }
   </style>
 </head>
 <body>
@@ -299,6 +308,7 @@
       <a href="#sobre" data-es="Sobre el Programa" data-en="About">Sobre el Programa</a>
       <a href="#manuales" data-es="Manuales" data-en="Manuals">Manuales</a>
       <a href="#estudios" data-es="Estudios" data-en="Studies">Estudios</a>
+      <a href="#piloto" data-es="Resultados" data-en="Results">Resultados</a>
       <a href="#publicaciones" data-es="Publicaciones" data-en="Publications">Publicaciones</a>
       <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
       <button class="lang-btn" id="langToggle" onclick="toggleLang()" aria-label="Switch language">EN</button>
@@ -394,7 +404,7 @@
       <li>
         <div class="when" data-es="2017–2018 · Fundación San Carlos de Maipo" data-en="2017–2018 · Fundación San Carlos de Maipo">2017–2018 · Fundación San Carlos de Maipo</div>
         <h3 data-es="Prevención de salud mental en preescolares: estudio piloto de la adaptación del programa ICPS a Chile" data-en="Mental health prevention in preschool children: pilot study of the adaptation of the ICPS programme to Chile">Prevención de salud mental en preescolares: estudio piloto de la adaptación del programa ICPS a Chile</h3>
-        <p data-es="Se desarrolló una versión culturalmente apropiada de ICPS y se evaluó su aceptabilidad y factibilidad en escuelas vulnerables de Santiago, mediante un ensayo piloto aleatorizado de tres brazos: ICPS impartido por una educadora del propio establecimiento, ICPS impartido por una educadora externa, y un grupo control. El protocolo se publicó en &lt;em&gt;Trials&lt;/em&gt; (2019) y los resultados fueron aceptados en &lt;em&gt;Child and Adolescent Psychiatry and Mental Health&lt;/em&gt; (2026)." data-en="A culturally appropriate version of ICPS was developed and its acceptability and feasibility were evaluated in vulnerable schools in Santiago through a three-arm pilot randomised trial: ICPS delivered by an in-school early years teacher, ICPS delivered by an external early years teacher, and a control group. The protocol was published in &lt;em&gt;Trials&lt;/em&gt; (2019) and the results have been accepted in &lt;em&gt;Child and Adolescent Psychiatry and Mental Health&lt;/em&gt; (2026).">Se desarrolló una versión culturalmente apropiada de ICPS y se evaluó su aceptabilidad y factibilidad en escuelas vulnerables de Santiago, mediante un ensayo piloto aleatorizado de tres brazos: ICPS impartido por una educadora del propio establecimiento, ICPS impartido por una educadora externa, y un grupo control. El protocolo se publicó en <em>Trials</em> (2019) y los resultados fueron aceptados en <em>Child and Adolescent Psychiatry and Mental Health</em> (2026).</p>
+        <p data-es="Se desarrolló una versión culturalmente apropiada de ICPS y se evaluó su aceptabilidad y factibilidad en escuelas vulnerables de Santiago, mediante un ensayo piloto aleatorizado de tres brazos: ICPS impartido por una educadora del propio establecimiento, ICPS impartido por una educadora externa, y un grupo control, con 234 niños y niñas de nueve escuelas. El protocolo se publicó en &lt;em&gt;Trials&lt;/em&gt; (2019) y los resultados fueron aceptados en &lt;em&gt;Child and Adolescent Psychiatry and Mental Health&lt;/em&gt; (2026)." data-en="A culturally appropriate version of ICPS was developed and its acceptability and feasibility were evaluated in vulnerable schools in Santiago through a three-arm pilot randomised trial: ICPS delivered by an in-school early years teacher, ICPS delivered by an external early years teacher, and a control group, with 234 children from nine schools. The protocol was published in &lt;em&gt;Trials&lt;/em&gt; (2019) and the results have been accepted in &lt;em&gt;Child and Adolescent Psychiatry and Mental Health&lt;/em&gt; (2026).">Se desarrolló una versión culturalmente apropiada de ICPS y se evaluó su aceptabilidad y factibilidad en escuelas vulnerables de Santiago, mediante un ensayo piloto aleatorizado de tres brazos: ICPS impartido por una educadora del propio establecimiento, ICPS impartido por una educadora externa, y un grupo control, con 234 niños y niñas de nueve escuelas. El protocolo se publicó en <em>Trials</em> (2019) y los resultados fueron aceptados en <em>Child and Adolescent Psychiatry and Mental Health</em> (2026).</p>
       </li>
       <li>
         <div class="when" data-es="2026 · Pilotaje" data-en="2026 · Piloting">2026 · Pilotaje</div>
@@ -415,7 +425,59 @@
   </div>
 </section>
 
-<section id="publicaciones">
+<section id="piloto">
+  <div class="section-inner">
+    <div class="title-bar">
+      <h2 class="section-title" data-es="Resultados del piloto" data-en="Pilot results">Resultados del piloto</h2>
+    </div>
+    <p class="section-subtitle" data-es="Ensayo piloto 2017–2018: el programa fue factible y bien aceptado en escuelas vulnerables de Santiago" data-en="2017–2018 pilot trial: the programme was feasible and well accepted in vulnerable schools in Santiago">Ensayo piloto 2017–2018: el programa fue factible y bien aceptado en escuelas vulnerables de Santiago</p>
+    <div class="stat-cards pilot-stats">
+          <div class="stat-card"><div class="num">9</div><div class="lbl" data-es="Escuelas vulnerables de Santiago (IVE ≥ 79%)" data-en="Vulnerable schools in Santiago (vulnerability index ≥ 79%)">Escuelas vulnerables de Santiago (IVE ≥ 79%)</div></div>
+          <div class="stat-card"><div class="num">234</div><div class="lbl" data-es="Niños y niñas de prekínder (83% de los elegibles)" data-en="Pre-K children (83% of those eligible)">Niños y niñas de prekínder (83% de los elegibles)</div></div>
+          <div class="stat-card"><div class="num">59</div><div class="lbl" data-es="Sesiones de ~20 minutos, 3 veces por semana durante 5–6 meses" data-en="~20-minute sessions, three times a week for 5–6 months">Sesiones de ~20 minutos, 3 veces por semana durante 5–6 meses</div></div>
+          <div class="stat-card"><div class="num">84%</div><div class="lbl" data-es="Completó la evaluación posintervención" data-en="Completed the post-intervention assessment">Completó la evaluación posintervención</div></div>
+          <div class="stat-card"><div class="num">99,5%</div><div class="lbl" data-es="Sesiones realizadas por educadoras externas (68,6% por educadoras internas)" data-en="Sessions delivered by external educators (68.6% by in-school educators)">Sesiones realizadas por educadoras externas (68,6% por educadoras internas)</div></div>
+          <div class="stat-card"><div class="num">&gt;4,5</div><div class="lbl" data-es="Fidelidad promedio al manual (escala de 1 a 5)" data-en="Mean fidelity to the manual (1–5 scale)">Fidelidad promedio al manual (escala de 1 a 5)</div></div>
+          <div class="stat-card"><div class="num">80%</div><div class="lbl" data-es="De los niños y niñas dijo que le gustaban los juegos ICPS" data-en="Of children said they liked the ICPS games">De los niños y niñas dijo que le gustaban los juegos ICPS</div></div>
+          <div class="stat-card"><div class="num">88%</div><div class="lbl" data-es="De las familias conocía el programa; 38% notó mejoras en la conducta" data-en="Of families knew about the programme; 38% noticed behavioural improvements">De las familias conocía el programa; 38% notó mejoras en la conducta</div></div>
+    </div>
+    <div class="card-grid" style="margin-top:2rem;">
+      <div class="info-card accent-border">
+        <div class="kicker" data-es="Diseño" data-en="Design">Diseño</div>
+        <h3 data-es="Ensayo piloto aleatorizado por conglomerados, de tres brazos" data-en="Three-arm pilot cluster randomised trial">Ensayo piloto aleatorizado por conglomerados, de tres brazos</h3>
+        <p data-es="Diez escuelas de cuatro comunas de Santiago se asignaron al azar a ICPS impartido por la educadora del curso (interna), ICPS impartido por una educadora contratada por el proyecto (externa) o grupo control. Una escuela se retiró antes de comenzar, por lo que nueve completaron el estudio (2017–2018). Registro: &lt;a href=&quot;https://clinicaltrials.gov/study/NCT03383172&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;NCT03383172&lt;/a&gt;." data-en="Ten schools from four municipalities in Santiago were randomly allocated to ICPS delivered by the class teacher (internal), ICPS delivered by an educator hired by the project (external) or a control group. One school withdrew before starting, so nine completed the study (2017–2018). Registration: &lt;a href=&quot;https://clinicaltrials.gov/study/NCT03383172&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;NCT03383172&lt;/a&gt;.">Diez escuelas de cuatro comunas de Santiago se asignaron al azar a ICPS impartido por la educadora del curso (interna), ICPS impartido por una educadora contratada por el proyecto (externa) o grupo control. Una escuela se retiró antes de comenzar, por lo que nueve completaron el estudio (2017–2018). Registro: <a href="https://clinicaltrials.gov/study/NCT03383172" target="_blank" rel="noopener">NCT03383172</a>.</p>
+      </div>
+      <div class="info-card">
+        <div class="kicker" data-es="Adaptación" data-en="Adaptation">Adaptación</div>
+        <h3 data-es="Las 59 sesiones, adaptadas a Chile" data-en="All 59 sessions, adapted to Chile">Las 59 sesiones, adaptadas a Chile</h3>
+        <p data-es="Todas las sesiones requirieron ajustes lingüísticos menores, 25% ajustes moderados y solo 3% cambios sustantivos, preservando los componentes centrales. El proceso contó con la guía de Myrna B. Shure y del equipo internacional de formación de ICPS. Las educadoras recibieron 16 horas de capacitación y supervisión quincenal." data-en="All sessions needed minor linguistic changes, 25% moderate changes and only 3% substantial changes, preserving the core components. The process was guided by Myrna B. Shure and the international ICPS training team. Educators received 16 hours of training and fortnightly supervision.">Todas las sesiones requirieron ajustes lingüísticos menores, 25% ajustes moderados y solo 3% cambios sustantivos, preservando los componentes centrales. El proceso contó con la guía de Myrna B. Shure y del equipo internacional de formación de ICPS. Las educadoras recibieron 16 horas de capacitación y supervisión quincenal.</p>
+      </div>
+      <div class="info-card">
+        <div class="kicker" data-es="Factibilidad y fidelidad" data-en="Feasibility and fidelity">Factibilidad y fidelidad</div>
+        <h3 data-es="Alta fidelidad con ambos modelos de implementación" data-en="High fidelity with both delivery models">Alta fidelidad con ambos modelos de implementación</h3>
+        <p data-es="La fidelidad fue alta tanto en las autoevaluaciones como en la observación de cerca del 70% de las sesiones grabadas en video. Las educadoras externas completaron casi todas las sesiones; las internas, que debían sumarlas a su carga docente habitual, completaron menos." data-en="Fidelity was high both in self-reports and in the observation of about 70% of the video-recorded sessions. External educators delivered almost every session; in-school educators, who had to add them to their usual teaching load, delivered fewer.">La fidelidad fue alta tanto en las autoevaluaciones como en la observación de cerca del 70% de las sesiones grabadas en video. Las educadoras externas completaron casi todas las sesiones; las internas, que debían sumarlas a su carga docente habitual, completaron menos.</p>
+      </div>
+      <div class="info-card">
+        <div class="kicker" data-es="Aceptabilidad" data-en="Acceptability">Aceptabilidad</div>
+        <h3 data-es="Bien recibido por niños, familias y educadoras" data-en="Well received by children, families and educators">Bien recibido por niños, familias y educadoras</h3>
+        <p data-es="La mayoría de los niños y niñas se sintió contento o muy contento durante los juegos. Las educadoras percibieron mejoras en el vocabulario emocional, la empatía y la resolución de problemas, y el 58% de las familias notó que sus hijos usaban palabras nuevas del programa en casa." data-en="Most children felt happy or very happy during the games. Educators perceived improvements in emotional vocabulary, empathy and problem-solving, and 58% of families noticed their children using new words from the programme at home.">La mayoría de los niños y niñas se sintió contento o muy contento durante los juegos. Las educadoras percibieron mejoras en el vocabulario emocional, la empatía y la resolución de problemas, y el 58% de las familias notó que sus hijos usaban palabras nuevas del programa en casa.</p>
+      </div>
+      <div class="info-card">
+        <div class="kicker" data-es="Resultados exploratorios" data-en="Exploratory outcomes">Resultados exploratorios</div>
+        <h3 data-es="Primeras señales en funciones ejecutivas" data-en="Early signals in executive function">Primeras señales en funciones ejecutivas</h3>
+        <p data-es="Los niños y niñas del grupo con educadora interna mejoraron sus funciones ejecutivas (MEFS) más que el grupo control (β = 6,26; IC 95% 2,16–10,35). También hubo mejoras modestas, no significativas, en reconocimiento de emociones, resolución de problemas sociales y dificultades reportadas por las familias (SDQ). El estudio no fue diseñado para probar eficacia." data-en="Children in the in-school educator group improved their executive function (MEFS) more than the control group (β = 6.26; 95% CI 2.16–10.35). There were also modest, non-significant improvements in emotion recognition, social problem-solving and parent-reported difficulties (SDQ). The study was not designed to test efficacy.">Los niños y niñas del grupo con educadora interna mejoraron sus funciones ejecutivas (MEFS) más que el grupo control (β = 6,26; IC 95% 2,16–10,35). También hubo mejoras modestas, no significativas, en reconocimiento de emociones, resolución de problemas sociales y dificultades reportadas por las familias (SDQ). El estudio no fue diseñado para probar eficacia.</p>
+      </div>
+      <div class="info-card accent-border">
+        <div class="kicker" data-es="Lecciones" data-en="Lessons learned">Lecciones</div>
+        <h3 data-es="Qué se necesita para escalar" data-en="What scaling up requires">Qué se necesita para escalar</h3>
+        <p data-es="La factibilidad depende de la carga de trabajo y del tiempo protegido de las educadoras: una escuela se retiró por la carga de implementación. Un ensayo definitivo deberá incluir acuerdos institucionales, tiempo asignado para preparar y dictar las sesiones, y acompañamiento continuo." data-en="Feasibility depends on educators&#x27; workload and protected time: one school withdrew because of the implementation workload. A definitive trial will need institutional agreements, time allocated to prepare and deliver sessions, and ongoing coaching.">La factibilidad depende de la carga de trabajo y del tiempo protegido de las educadoras: una escuela se retiró por la carga de implementación. Un ensayo definitivo deberá incluir acuerdos institucionales, tiempo asignado para preparar y dictar las sesiones, y acompañamiento continuo.</p>
+      </div>
+    </div>
+    <p class="note" data-es="Fuente: Gaete J, Ríos N, Salgado G, Nejaz L. Acceptability and feasibility of implementing the I Can Problem Solve (ICPS) program among preschoolers in Chile: results of a pilot randomised controlled trial. &lt;em&gt;Child and Adolescent Psychiatry and Mental Health&lt;/em&gt; (aceptado, 2026)." data-en="Source: Gaete J, Ríos N, Salgado G, Nejaz L. Acceptability and feasibility of implementing the I Can Problem Solve (ICPS) program among preschoolers in Chile: results of a pilot randomised controlled trial. &lt;em&gt;Child and Adolescent Psychiatry and Mental Health&lt;/em&gt; (accepted, 2026).">Fuente: Gaete J, Ríos N, Salgado G, Nejaz L. Acceptability and feasibility of implementing the I Can Problem Solve (ICPS) program among preschoolers in Chile: results of a pilot randomised controlled trial. <em>Child and Adolescent Psychiatry and Mental Health</em> (aceptado, 2026).</p>
+  </div>
+</section>
+
+<section id="publicaciones" class="section-alt">
   <div class="section-inner">
     <div class="title-bar">
       <h2 class="section-title" data-es="Publicaciones" data-en="Publications">Publicaciones</h2>
@@ -425,6 +487,7 @@
       <div class="pub-card" style="border-left-color: var(--accent);">
         <div class="pub-year">2026 · Child and Adolescent Psychiatry and Mental Health <span class="pub-badge" style="background:#fff3e0; color:#b7410e;" data-es="Aceptado" data-en="Accepted">Aceptado</span></div>
         <div class="pub-title">Acceptability and feasibility of implementing the I Can Problem Solve (ICPS) program among preschoolers in Chile: results of a pilot randomised controlled trial</div>
+        <div class="pub-authors">Gaete J, Ríos N, Salgado G, Nejaz L</div>
         <div class="pub-journal" data-es="Artículo aceptado para publicación (septiembre de 2026). Resultados del ensayo piloto 2017–2018." data-en="Article accepted for publication (September 2026). Results of the 2017–2018 pilot trial.">Artículo aceptado para publicación (septiembre de 2026). Resultados del ensayo piloto 2017–2018.</div>
       </div>
 
@@ -442,7 +505,7 @@
 
 
 <!-- ════════════════ CONTACT ════════════════ -->
-<section id="contacto" class="section-alt">
+<section id="contacto">
   <div class="section-inner">
     <div class="title-bar">
       <h2 class="section-title" data-es="Contacto" data-en="Contact">Contacto</h2>
