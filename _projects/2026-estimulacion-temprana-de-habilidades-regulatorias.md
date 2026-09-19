@@ -1,18 +1,19 @@
 ---
-title: "Estimulación temprana de habilidades regulatorias claves del desarrollo cognitivo, emocional y social: enriqueciendo la etapa de educación parvularia"
+title: 'Estimulación temprana de habilidades regulatorias claves del desarrollo cognitivo, emocional y social: enriqueciendo la etapa de educación parvularia'
 collection: projects
 permalink: /projects/2026-estimulacion-temprana-de-habilidades-regulatorias/
-excerpt: "ANID — Fondecyt Regular — Co-Investigator (2026-2030)"
+excerpt: ANID — Fondecyt Regular — Co-Investigator (2026–2031)
 date: 2026-01-01
-years: "2026-2030"
-status: active
-funder: "ANID — Fondecyt Regular"
-role: "Co-Investigator"
+years: 2026–2031
+funder: ANID — Fondecyt Regular
+grant_number: '1260663'
+role: Co-Investigator
+website: https://jegaete.github.io/icps/
+orcid_put_code: 2551539
 project_number: 2
-website: "https://jegaete.github.io/icps/"
 ---
 
-**Período:** 2026-2030
+**Período:** 2026–2031
 **Financiamiento:** ANID — Fondecyt Regular
 **Rol:** Co-Investigator
 

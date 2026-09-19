@@ -1,17 +1,18 @@
 ---
-title: "Trajectories of delinquency and drug use among young offenders"
+title: Trajectories of delinquency and drug use among young offenders
 collection: projects
 permalink: /projects/2012-trajectories-of-delinquency-and-drug-use-among-you/
-excerpt: "ANID — Fondecyt Regular — PI (2012-2015)"
+excerpt: ANID — Fondecyt Regular — PI (2012–2015)
 date: 2012-01-01
-years: "2012-2015"
-status: finished
-funder: "ANID — Fondecyt Regular"
-role: "PI"
+years: 2012–2015
+funder: ANID — Fondecyt Regular
+grant_number: '1121107'
+role: PI
+orcid_put_code: 43199
 project_number: 23
 ---
 
-**Período:** 2012-2015
+**Período:** 2012–2015
 **Financiamiento:** ANID — Fondecyt Regular
 **Rol:** PI
 

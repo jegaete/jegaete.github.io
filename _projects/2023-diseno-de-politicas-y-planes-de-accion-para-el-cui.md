@@ -1,17 +1,19 @@
 ---
-title: "Diseño de políticas y planes de acción para el cuidado de la Salud Mental Estudiantil y prevención de la Conducta Suicida en estudiantes de pregrado en la Universidad de los Andes"
+title: Diseño de políticas y planes de acción para el cuidado de la Salud Mental Estudiantil y prevención de la Conducta Suicida en estudiantes de pregrado en la Universidad de los Andes
+title_en: Design of policies and action plans for the care of Student Mental Health and prevention of Suicidal Behavior in undergraduate students at the Universidad de los Andes
 collection: projects
 permalink: /projects/2023-diseno-de-politicas-y-planes-de-accion-para-el-cui/
-excerpt: "Ministerio de Educación de Chile (FDI) — PI (2023-2025)"
+excerpt: Ministerio de Educación de Chile — PI (2023–2025)
 date: 2023-01-01
-years: "2023-2025"
-status: finished
-funder: "Ministerio de Educación de Chile (FDI)"
-role: "PI"
+years: 2023–2025
+funder: Ministerio de Educación de Chile
+grant_number: UAN23101
+role: PI
+orcid_put_code: 2288498
 project_number: 6
 ---
 
-**Período:** 2023-2025
+**Período:** 2023–2025
 **Financiamiento:** Ministerio de Educación de Chile (FDI)
 **Rol:** PI
 

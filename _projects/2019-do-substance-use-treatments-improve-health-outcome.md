@@ -1,17 +1,18 @@
 ---
-title: "Do substance use treatments improve health outcomes among patients? Population risk estimates using a registry-based retrospective cohort design"
+title: Do substance use treatments improve health outcomes among patients? Population risk estimates using a registry-based retrospective cohort design
 collection: projects
 permalink: /projects/2019-do-substance-use-treatments-improve-health-outcome/
-excerpt: "ANID — Fondecyt Regular — Co-Investigator (2019-2022)"
+excerpt: ANID — Fondecyt Regular — Co-Investigator (2019–2022)
 date: 2019-01-01
-years: "2019-2022"
-status: finished
-funder: "ANID — Fondecyt Regular"
-role: "Co-Investigator"
+years: 2019–2022
+funder: ANID — Fondecyt Regular
+grant_number: '1191282'
+role: Co-Investigator
+orcid_put_code: 2288508
 project_number: 16
 ---
 
-**Período:** 2019-2022
+**Período:** 2019–2022
 **Financiamiento:** ANID — Fondecyt Regular
 **Rol:** Co-Investigator
 
