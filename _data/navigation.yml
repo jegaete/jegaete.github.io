@@ -1,4 +1,4 @@
-# main navigation links (top bar)
+# main navigation links (top bar) — español
 main:
   - title: "Sobre mí"
     url: /
@@ -8,3 +8,14 @@ main:
     url: /publications/
   - title: "Proyectos"
     url: /projects/
+
+# English navigation (pages under /en/)
+main_en:
+  - title: "About"
+    url: /en/
+  - title: "News"
+    url: /en/news/
+  - title: "Publications"
+    url: /en/publications/
+  - title: "Projects"
+    url: /en/projects/
