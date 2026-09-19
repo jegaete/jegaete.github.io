@@ -3,6 +3,8 @@ permalink: /
 title: "Jorge E. Gaete Olivares"
 excerpt: "Profesor Titular y Director del Centro ISME, Escuela de Educación, Universidad de los Andes."
 author_profile: true
+lang: es
+lang_alt: /en/
 redirect_from:
 - /about/
 - /about.html
@@ -47,7 +49,7 @@ redirect_from:
 
 <h2>Producción científica</h2>
 
-<p>Cuenta con más de <a href="/publications/" style="text-decoration:none;"><span class="orcid-badge"><span id="orcid-pub-count">95</span> publicaciones</span></a> en revistas científicas y ha dirigido o participado como co-investigador en más de <a href="/projects/" style="text-decoration:none;"><span class="orcid-badge"><span id="orcid-project-count">{{ site.projects | size }}</span> proyectos</span></a> de investigación financiados por la Agencia Nacional de Investigación y Desarrollo (ANID) y otras agencias nacionales e internacionales (Wellcome Trust, Academy of Finland, entre otras).</p>
+<p>Cuenta con <a href="/publications/" style="text-decoration:none;"><span class="orcid-badge">{{ site.data.publications | size }} publicaciones</span></a> en revistas científicas y ha dirigido o participado como co-investigador en <a href="/projects/" style="text-decoration:none;"><span class="orcid-badge">{% assign n_proj = site.projects | where_exp: "p", "p.type != 'award'" | size %}{{ n_proj }} proyectos</span></a> de investigación financiados por la Agencia Nacional de Investigación y Desarrollo (ANID) y otras agencias nacionales e internacionales (Wellcome Trust, Academy of Finland, entre otras).</p>
 
 
 <h2>Impacto académico</h2>
@@ -67,11 +69,10 @@ redirect_from:
 
 <h2>Publicaciones recientes</h2>
 
-<ul>
-<li>Gaete J, et al. Six-month follow-up of the ‘Mi Mejor Plan’ school-based prevention program. <em>BMC Public Health</em>. 2026. <a href="https://doi.org/10.1186/s12889-026-28548-x" target="_blank">DOI</a></li>
-<li>Gaete J, et al. Japi 2.0, a gaming platform to stimulate cognitive and socio-emotional skills in early childhood: results of a pilot RCT. <em>Child Adolesc Psychiatry Ment Health</em>. 2026. <a href="https://doi.org/10.1186/s13034-026-01133-1" target="_blank">DOI</a></li>
-<li>Crockett MA, et al. Persistence and Incidence of Suicidal Ideation Among LGBTQ+ University Students. <em>J Homosexuality</em>. 2026. <a href="https://doi.org/10.1080/00918369.2026.2689722" target="_blank">DOI</a></li>
-<li>Gaete J, et al. Scaling Up a Blended School-Based Suicide Prevention Program (Reframe-IT+). <em>Arch Suicide Res</em>. 2026. <a href="https://doi.org/10.1080/13811118.2026.2672043" target="_blank">DOI</a></li>
+<ul class="recent-pubs">
+{% for p in site.data.publications limit: 5 %}
+<li>{{ p.apa }}</li>
+{% endfor %}
 </ul>
 
 <p><a href="/publications/">Ver todas las publicaciones →</a></p>
@@ -93,30 +94,3 @@ redirect_from:
 
 </div>
 
-<script>
-(function() {
-fetch('https://pub.orcid.org/v3.0/0000-0002-6650-6018/works', {
-headers: { 'Accept': 'application/json' },
-cache: 'no-store'
-})
-.then(function(r) { return r.json(); })
-.then(function(data) {
-var count = data.group ? data.group.length : null;
-var el = document.getElementById('orcid-pub-count');
-if (el && count !== null) el.textContent = count;
-})
-.catch(function() {});
-
-fetch('https://pub.orcid.org/v3.0/0000-0002-6650-6018/fundings', {
-headers: { 'Accept': 'application/json' },
-cache: 'no-store'
-})
-.then(function(r) { return r.json(); })
-.then(function(data) {
-var count = data.group ? data.group.length : null;
-var el = document.getElementById('orcid-project-count');
-if (el && count !== null) el.textContent = count;
-})
-.catch(function() {});
-})();
-</script>

@@ -43,9 +43,13 @@ Puedes descargar mi CV completo en inglés aquí: [📄 Download CV (PDF)](/file
 
 ## Publicaciones Seleccionadas
 
-{% for post in site.publications reversed %}
-  {% include archive-single-cv.html %}
+<ul>
+{% for p in site.data.publications limit: 10 %}
+  <li>{{ p.apa }}</li>
 {% endfor %}
+</ul>
+
+[Ver todas las publicaciones →](/publications/)
 
 ---
 

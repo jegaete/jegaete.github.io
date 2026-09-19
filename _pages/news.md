@@ -1,5 +1,7 @@
 ---
 permalink: /news/
+lang: es
+lang_alt: /en/news/
 title: "Noticias y Destacados"
 author_profile: true
 ---
