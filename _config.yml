@@ -4,7 +4,7 @@ title                    : "Jorge Gaete — Investigación"
 site_theme               : "air"
 title_separator          : "-"
 name                     : "Jorge Gaete"
-description              : "Sitio personal del Dr. Jorge E. Gaete Olivares, Profesor Titular y Director del Centro ISME, Escuela de Educación, Escuela de Educación, Universidad de los Andes (Chile). Investigación en salud mental estudiantil, epidemiología psiquiátrica y prevención en entornos escolares."
+description              : "Sitio personal del Dr. Jorge E. Gaete Olivares, Profesor Titular y Director del Centro ISME, Escuela de Educación, Universidad de los Andes (Chile). Investigación en salud mental estudiantil, epidemiología psiquiátrica y prevención en entornos escolares."
 url                      : "https://jegaete.github.io"
 baseurl                  : ""
 repository               : "jegaete/jegaete.github.io"
@@ -14,6 +14,7 @@ author:
   name             : "Jorge Gaete"
   avatar           : "profile2024.png"
   bio              : "Profesor/Investigador, Escuela de Educación, Facultad de Ciencias Sociales, Universidad de los Andes (Chile)."
+  bio_en           : "Professor/Researcher, School of Education, Faculty of Social Sciences, Universidad de los Andes (Chile)."
   location         : "Santiago, Chile"
   employer         : "Universidad de los Andes"
   email            : "jgaete@uandes.cl"
@@ -62,11 +63,11 @@ author:
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
   books:
-    title: 'Books'
+    title: 'Libros'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Artículos'
   conferences:
-    title: 'Conference Papers'
+    title: 'Ponencias'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
