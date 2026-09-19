@@ -155,8 +155,11 @@ def parse_bibtex(bib):
     fields = {}
     if not bib:
         return fields
-    for m in re.finditer(r"(\w+)\s*=\s*[{\"](.*?)[}\"]\s*,?\s*\n", bib + "\n", re.S):
-        fields[m.group(1).lower()] = clean_text(m.group(2))
+    # admite campos en una o varias líneas, con {llaves} (un nivel anidado) o "comillas"
+    for m in re.finditer(r'(\w+)\s*=\s*(?:\{((?:[^{}]|\{[^{}]*\})*)\}|"([^"]*)")', bib):
+        val = m.group(2) if m.group(2) is not None else m.group(3)
+        val = val.replace("\\&", "&").replace("{", "").replace("}", "").replace("--", "–")
+        fields[m.group(1).lower()] = clean_text(val)
     return fields
 
 
@@ -260,12 +263,13 @@ def entry_from_orcid(work, detail):
     if not names and bib.get("author"):
         names = [apa_name(*split_name(a)) for a in re.split(r"\s+and\s+", bib["author"]) if a.strip()]
     journal = work["journal"] or bib.get("journal", "")
+    url = work["url"] or ((detail or {}).get("url") or {}).get("value") or bib.get("url", "")
     return {
         "year": work["year"], "month": work["month"],
         "title": work["title"], "journal": journal,
         "apa": format_apa(apa_author_list(names), work["year"], work["title"], journal,
                           bib.get("volume", ""), bib.get("number", ""), bib.get("pages", ""),
-                          "", work["doi"], work["url"]),
+                          "", work["doi"], url),
     }
 
 
