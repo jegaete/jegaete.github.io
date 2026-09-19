@@ -1,0 +1,86 @@
+{% comment %}
+  Lista de publicaciones generada desde _data/publications.yml (ORCID + Crossref, APA 7).
+  Uso: {% include publications-list.html lang="es" %}
+{% endcomment %}
+{% assign lang = include.lang | default: page.lang | default: "es" %}
+{% assign t = site.data.i18n[lang] %}
+{% assign pubs = site.data.publications %}
+
+<style>
+.pub-intro { font-size: 0.82rem; color: #555; margin-bottom: 1rem; }
+.pub-intro a { color: #2a5db0; text-decoration: none; }
+.pub-intro a:hover { text-decoration: underline; }
+.pub-search { width: 100%; box-sizing: border-box; font-size: 0.85rem; padding: 0.5rem 0.7rem; border: 1px solid #d6d6d6; border-radius: 4px; margin-bottom: 0.8rem; }
+.pub-search:focus { outline: none; border-color: #2a5db0; }
+.pub-years { font-size: 0.78rem; margin-bottom: 1.6rem; line-height: 1.9; }
+.pub-years a { color: #2a5db0; text-decoration: none; margin-right: 0.55rem; white-space: nowrap; }
+.pub-years a:hover { text-decoration: underline; }
+.pub-year-section { margin-bottom: 2rem; }
+.pub-year-header { font-size: 1rem; font-weight: 700; color: #444; letter-spacing: 0.12em; border-bottom: 2px solid #e0e0e0; padding-bottom: 0.4rem; margin: 0.5rem 0 1rem; scroll-margin-top: 4rem; }
+.pub-year-count { font-size: 0.75rem; font-weight: 500; color: #888; letter-spacing: 0; margin-left: 6px; }
+.pub-item { font-size: 0.83rem; line-height: 1.55; color: #333; margin: 0 0 0.9rem; padding: 0 0 0.9rem 1.6em; text-indent: -1.6em; border-bottom: 1px solid #f2f2f2; overflow-wrap: anywhere; }
+.pub-item:last-child { border-bottom: none; }
+.pub-item a { color: #2a5db0; text-decoration: none; }
+.pub-item a:hover { text-decoration: underline; }
+.pub-item strong { color: #111; }
+.pub-none { font-size: 0.85rem; color: #777; display: none; }
+</style>
+
+{% if pubs and pubs.size > 0 %}
+
+{% assign years = pubs | map: "year" | uniq %}
+
+<p class="pub-intro">
+  <strong>{{ pubs.size }}</strong> {{ t.pubs_word }} ·
+  {{ t.pubs_source }} <a href="{{ site.author.orcid }}" target="_blank" rel="noopener">ORCID</a>{% if site.author.googlescholar %} ·
+  <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">{{ t.pubs_scholar }}</a>{% endif %}
+</p>
+
+<input type="search" class="pub-search" id="pub-search" placeholder="{{ t.pubs_search }}" aria-label="{{ t.pubs_search }}">
+
+<nav class="pub-years" aria-label="Años">
+{% for y in years %}<a href="#y{{ y }}">{{ y }}</a>{% endfor %}
+</nav>
+
+<p class="pub-none" id="pub-none">{{ t.pubs_none }}</p>
+
+{% for y in years %}
+  {% assign ypubs = pubs | where: "year", y %}
+  <section class="pub-year-section" id="y{{ y }}">
+    <h2 class="pub-year-header">{{ y }}<span class="pub-year-count">({{ ypubs.size }} {% if ypubs.size == 1 %}{{ t.pubs_word_one }}{% else %}{{ t.pubs_word }}{% endif %})</span></h2>
+    {% for p in ypubs %}
+    <p class="pub-item">{{ p.apa }}</p>
+    {% endfor %}
+  </section>
+{% endfor %}
+
+<script>
+(function () {
+  var input = document.getElementById('pub-search');
+  if (!input) return;
+  var none = document.getElementById('pub-none');
+  var sections = document.querySelectorAll('.pub-year-section');
+  function norm(s) { return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
+  var items = Array.prototype.map.call(document.querySelectorAll('.pub-item'), function (el) {
+    return { el: el, text: norm(el.textContent + ' ' + el.closest('.pub-year-section').id.slice(1)) };
+  });
+  input.addEventListener('input', function () {
+    var terms = norm(input.value).split(/\s+/).filter(Boolean);
+    var any = false;
+    items.forEach(function (it) {
+      var ok = terms.every(function (w) { return it.text.indexOf(w) !== -1; });
+      it.el.style.display = ok ? '' : 'none';
+    });
+    sections.forEach(function (s) {
+      var visible = s.querySelectorAll('.pub-item:not([style*="none"])').length;
+      s.style.display = visible ? '' : 'none';
+      if (visible) any = true;
+    });
+    none.style.display = any ? 'none' : 'block';
+  });
+})();
+</script>
+
+{% else %}
+<p class="pub-intro">{{ t.pubs_empty }}</p>
+{% endif %}

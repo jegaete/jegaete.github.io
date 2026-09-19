@@ -1,24 +1,39 @@
 {% include base_path %}
+{% assign lang = page.lang | default: "es" %}
+{% assign t = site.data.i18n[lang] %}
+{% if lang == "en" %}
+  {% assign nav = site.data.navigation.main_en %}
+  {% assign alt_url = page.lang_alt | default: "/" %}
+{% else %}
+  {% assign nav = site.data.navigation.main %}
+  {% assign alt_url = page.lang_alt | default: "/en/" %}
+{% endif %}
+<style>
+.masthead__menu-item--lang a { font-size: 0.72em; font-weight: 700; letter-spacing: 0.08em; border: 1px solid currentColor; border-radius: 3px; padding: 1px 6px; }
+</style>
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <button><span class="navicon"></span></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == '/' or page.url == '/index.html' %}selected{% endif %}">
-            <a href="{{ base_path }}/">{{ site.title }}</a>
+          <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == t.home_url or page.url == '/index.html' %}selected{% endif %}">
+            <a href="{{ base_path }}{{ t.home_url }}">{{ t.site_title | default: site.title }}</a>
           </li>
-          {% for link in site.data.navigation.main %}
+          {% for link in nav %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
+            <li class="masthead__menu-item {% if page.url contains link.url and link.url != '/' and link.url != '/en/' %}selected{% endif %}">
               <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
-              </ul>
+          <li class="masthead__menu-item masthead__menu-item--lang">
+            <a href="{{ base_path }}{{ alt_url }}" hreflang="{% if lang == 'en' %}es{% else %}en{% endif %}" title="{{ t.switch_title }}" lang="{% if lang == 'en' %}es{% else %}en{% endif %}">{{ t.switch_label }}</a>
+          </li>
+        </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
