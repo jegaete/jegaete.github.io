@@ -15,10 +15,6 @@ exclude_put_codes:
   # Resúmenes de congreso (European Psychiatry)
   - 12861322   # 2012 · The association between personal, familial, school and peer factors and smoking…
   - 12861324   # 2010 · The association between school bonding and smoking amongst adolescents…
-  # Duplicados en inglés (sin DOI) de artículos de Rev Med Chile que ya aparecen con DOI
-  - 13240863   # 2014 · Factors associated with health promoting behaviors… (= "Factores asociados a conductas promotoras de salud…")
-  - 24653434   # 2016 · Smoking and alcohol use among Chilean teenagers… (= "Consumo de tabaco y alcohol en adolescentes de 10 a 14 años…")
-  - 27863259   # 2016 · The influence of parental healthy behaviors… (= "Influencia de las conductas promotoras de salud de los padres…")
 
 # DOI que no se muestran (opcional).
 exclude_dois: []
@@ -35,22 +31,15 @@ author_overrides:
     - "Gaete, J."
     - "Montgomery, A."
 
-# Publicaciones que no están en ORCID y se agregan a mano.
-# authors: "Apellido, Nombre" (o iniciales), en orden.
-manual:
-  - title: "The mediating role of psychological inflexibility between psychotic experiences and mental well-being in university students"
-    authors:
-      - "Yáñez Lizana, J."
-      - "Fuentes Ferrada, R."
-      - "Núñez, D."
-      - "Martínez, V."
-      - "Gaete, J."
-      - "Mac-Ginty, S."
-      - "Langer, A. I."
-    year: 2026
-    month: 3
-    journal: "International Journal of Psychology & Psychological Therapy"
-    volume: 26
-    issue: 1
-    pages: "79-92"
-    url: "https://www.ijpsy.com"
+# Publicaciones que no están en ORCID y se agregan a mano (lo ideal es agregarlas a ORCID).
+# Ejemplo:
+#   - title: "Título del artículo"
+#     authors: ["Apellido, N.", "Gaete, J."]
+#     year: 2026
+#     month: 3
+#     journal: "Nombre de la revista"
+#     volume: 26
+#     issue: 1
+#     pages: "79-92"
+#     doi: ""            # o url: "https://..."
+manual: []
