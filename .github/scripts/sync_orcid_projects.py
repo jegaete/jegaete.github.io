@@ -48,12 +48,13 @@ def main():
             start_year = (start.get('year') or {}).get('value', '')
             end_year   = (end.get('year')   or {}).get('value', '')
             funder = (summary.get('organization') or {}).get('name', '')
+            ftype = summary.get('type') or ''
 
             year = start_year or '2000'
             slug = slugify(title)
             filename = f"{year}-{slug}.md"
             correct_filenames.add(filename)
-            orcid_projects.append((filename, title, year, start_year, end_year, funder, grant_number))
+            orcid_projects.append((filename, title, year, start_year, end_year, funder, grant_number, ftype))
 
     # --- Cleanup: delete auto-generated stubs that no longer match any ORCID slug ---
     existing_files = set(os.listdir(PROJECTS_DIR))
@@ -76,7 +77,7 @@ def main():
     existing_files = set(os.listdir(PROJECTS_DIR))
     new_count = 0
 
-    for filename, title, year, start_year, end_year, funder, grant_number in orcid_projects:
+    for filename, title, year, start_year, end_year, funder, grant_number, ftype in orcid_projects:
         if filename in existing_files:
             print(f"Skipped (exists): {filename}")
             continue
@@ -88,11 +89,12 @@ def main():
         title_safe = title.replace('"', '\\"')
         funder_safe = funder.replace('"', '\\"')
         slug = slugify(title)
+        type_line = "type: award\n" if ftype == "award" else ""
 
         content = f"""---
 title: "{title_safe}"
 collection: projects
-permalink: /projects/{year}-{slug}/
+{type_line}permalink: /projects/{year}-{slug}/
 excerpt: "{excerpt}"
 date: {year}-01-01
 years: "{years_str}"
