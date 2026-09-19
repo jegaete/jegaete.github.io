@@ -1,9 +1,20 @@
-name: Sync ORCID Projects
+name: Sync ORCID (proyectos y publicaciones)
 
 on:
   schedule:
-    - cron: '0 6 1 * *'   # Runs on the 1st of every month at 06:00 UTC
-  workflow_dispatch:        # Also allows manual trigger from GitHub Actions tab
+    - cron: '0 6 1 * *'   # día 1 de cada mes, 06:00 UTC
+  workflow_dispatch:        # también se puede lanzar a mano desde la pestaña Actions
+  push:
+    branches: [master, main]
+    paths:
+      - '_data/publications_config.yml'
+      - '.github/scripts/sync_orcid_publications.py'
+      - '.github/scripts/sync_orcid_projects.py'
+      - '.github/workflows/sync-orcid-projects.yml'
+
+concurrency:
+  group: sync-orcid
+  cancel-in-progress: false
 
 jobs:
   sync:
@@ -21,15 +32,23 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install requests
+        run: pip install requests pyyaml
 
       - name: Sync projects from ORCID
         run: python .github/scripts/sync_orcid_projects.py
 
-      - name: Commit new project files
+      - name: Sync publications from ORCID + Crossref
+        run: python .github/scripts/sync_orcid_publications.py
+
+      - name: Commit changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add _projects/
-          git diff --staged --quiet && echo "No new projects." || git commit -m "chore: sync new projects from ORCID"
-          git push
+          git add _projects/ _data/publications.yml
+          if git diff --staged --quiet; then
+            echo "Sin cambios."
+          else
+            git commit -m "chore: sync proyectos y publicaciones desde ORCID"
+            git pull --rebase
+            git push
+          fi
