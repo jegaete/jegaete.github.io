@@ -8,6 +8,8 @@ main:
     url: /publications/
   - title: "Proyectos"
     url: /projects/
+  - title: "Escalas"
+    url: /escalas/
 
 # English navigation (pages under /en/)
 main_en:
@@ -19,3 +21,5 @@ main_en:
     url: /en/publications/
   - title: "Projects"
     url: /en/projects/
+  - title: "Scales"
+    url: /escalas/
