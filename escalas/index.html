@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Escalas validadas en Chile – Equipo ISME, Universidad de los Andes</title>
+  <meta name="description" content="Catálogo de instrumentos de medición validados en población chilena por el equipo de Jorge Gaete (ISME, Universidad de los Andes), con solicitud en línea para uso académico." />
+  <meta property="og:title" content="Escalas validadas en Chile – Equipo ISME, Universidad de los Andes" />
+  <meta property="og:description" content="Catálogo de instrumentos de medición validados en población chilena por el equipo de Jorge Gaete (ISME, Universidad de los Andes), con solicitud en línea para uso académico." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root {
+      --primary: #1f3a5f;
+      --primary-light: #2f5c8f;
+      --accent: #0f766e;
+      --accent-light: #2dd4bf;
+      --bg: #f8f9fa;
+      --card: #ffffff;
+      --text: #212529;
+      --text-muted: #6c757d;
+      --border: #dee2e6;
+      --hero-bg: #12263f;
+      --badge-bg: #e6f4f1;
+      --hero-accent: #14b8a6;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--hero-bg);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    }
+    .nav-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 1.5rem; height: 58px;
+    }
+    .nav-brand {
+      font-weight: 700; font-size: 1.1rem; color: #fff; text-decoration: none;
+    }
+    .nav-brand span { color: var(--hero-accent); }
+    .nav-links { display: flex; gap: 0.2rem; align-items: center; }
+    .nav-links a {
+      color: rgba(255,255,255,0.82); text-decoration: none;
+      font-size: 0.82rem; font-weight: 500; letter-spacing: 0.02em;
+      padding: 0.35rem 0.65rem; border-radius: 4px; transition: all 0.18s;
+    }
+    .nav-links a:hover { color: #fff; background: rgba(255,255,255,0.12); }
+    .lang-btn {
+      background: var(--hero-accent); color: #fff !important;
+      border-radius: 4px; padding: 0.3rem 0.75rem !important;
+      font-weight: 600 !important; margin-left: 0.6rem;
+      cursor: pointer; border: none; font-size: 0.82rem;
+      letter-spacing: 0.04em;
+    }
+    .lang-btn:hover { background: var(--accent-light) !important; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: #fff; border-radius: 2px; transition: 0.3s; }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, var(--hero-bg) 0%, #1b3557 60%, #0f766e 100%);
+      color: #fff; padding: 5rem 1.5rem 4rem;
+      text-align: center;
+    }
+    .hero-tag {
+      display: inline-block; background: rgba(45,212,191,0.18);
+      border: 1px solid var(--hero-accent); color: var(--accent-light);
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; padding: 0.3rem 0.9rem;
+      border-radius: 20px; margin-bottom: 1.4rem;
+    }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; line-height: 1.15; margin-bottom: 0.6rem; }
+    .hero h1 span { color: var(--accent-light); }
+    .hero-sub { font-size: clamp(1.05rem, 2.5vw, 1.3rem); color: rgba(255,255,255,0.78); margin-bottom: 2rem; font-weight: 400; }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-bottom: 2.5rem; }
+    .hero-pill {
+      background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 30px; padding: 0.45rem 1.2rem;
+      font-size: 0.85rem; color: rgba(255,255,255,0.9);
+    }
+    .hero-pill strong { color: #fff; }
+    .hero-cta { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-block; padding: 0.7rem 1.8rem;
+      border-radius: 6px; text-decoration: none; font-weight: 600;
+      font-size: 0.92rem; transition: all 0.18s;
+    }
+    .btn-primary { background: var(--hero-accent); color: #fff; }
+    .btn-primary:hover { background: var(--accent-light); transform: translateY(-1px); }
+    .btn-outline { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.4); }
+    .btn-outline:hover { border-color: #fff; background: rgba(255,255,255,0.08); }
+
+    /* ── SECTIONS ── */
+    section { padding: 4.5rem 1.5rem; }
+    .section-inner { max-width: 1000px; margin: 0 auto; }
+    .section-alt { background: #fff; }
+    .section-title {
+      font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800;
+      color: var(--primary); margin-bottom: 0.4rem;
+    }
+    .section-subtitle { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 2.5rem; }
+    .title-bar { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.4rem; }
+    .title-bar::after { content: ''; flex: 1; height: 2px; background: linear-gradient(90deg, var(--accent), transparent); }
+    p { margin-bottom: 1rem; }
+    p:last-child { margin-bottom: 0; }
+
+    /* ── ABOUT ── */
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+    .stat-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .stat-card {
+      background: var(--hero-bg); color: #fff;
+      border-radius: 10px; padding: 1.2rem; text-align: center;
+    }
+    .stat-card .num { font-size: 2rem; font-weight: 800; color: var(--accent-light); }
+    .stat-card .lbl { font-size: 0.78rem; color: rgba(255,255,255,0.75); margin-top: 0.2rem; }
+
+    /* ── OBJECTIVES ── */
+    .obj-list { list-style: none; display: flex; flex-direction: column; gap: 1rem; }
+    .obj-list li {
+      display: flex; gap: 1rem; align-items: flex-start;
+      background: #fff; border-radius: 10px; padding: 1.2rem 1.4rem;
+      border-left: 4px solid var(--accent); box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    .obj-num {
+      background: var(--primary); color: #fff;
+      border-radius: 50%; width: 28px; height: 28px; min-width: 28px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 0.82rem;
+    }
+
+    /* ── METHODOLOGY ── */
+    .method-phases { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.2rem; margin-bottom: 2.5rem; }
+    .phase-card {
+      background: #fff; border-radius: 12px; padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07); border-top: 4px solid var(--primary-light);
+    }
+    .phase-card.accent-border { border-top-color: var(--accent); }
+    .phase-icon { font-size: 1.8rem; margin-bottom: 0.8rem; }
+    .phase-card h3 { font-size: 0.95rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; }
+    .phase-card p { font-size: 0.88rem; color: var(--text-muted); margin: 0; }
+    .program-structure {
+      background: linear-gradient(135deg, var(--hero-bg), #0f766e);
+      color: #fff; border-radius: 14px; padding: 2rem;
+    }
+    .program-structure h3 { margin-bottom: 1rem; color: var(--accent-light); font-size: 1.1rem; }
+    .sessions-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .session-block { background: rgba(255,255,255,0.1); border-radius: 8px; padding: 1rem; text-align: center; }
+    .session-block .s-num { font-size: 1.6rem; font-weight: 800; color: var(--accent-light); }
+    .session-block .s-lbl { font-size: 0.75rem; color: rgba(255,255,255,0.8); margin-top: 0.3rem; }
+    .trial-info { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
+    .trial-box { background: #fff; border-radius: 10px; padding: 1.2rem; box-shadow: 0 1px 4px rgba(0,0,0,0.07); }
+    .trial-box h4 { color: var(--primary); font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .trial-box p { font-size: 0.85rem; color: var(--text-muted); margin: 0; }
+
+    /* ── TEAM ── */
+    .team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.5rem; }
+    .team-card {
+      background: #fff; border-radius: 14px; padding: 1.8rem 1.2rem;
+      text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      transition: transform 0.18s, box-shadow 0.18s;
+    }
+    .team-card:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(0,0,0,0.11); }
+    .team-avatar {
+      width: 72px; height: 72px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 1.5rem; font-weight: 700;
+      margin: 0 auto 1rem;
+    }
+    .team-card h3 { font-size: 0.95rem; font-weight: 700; color: var(--primary); margin-bottom: 0.3rem; }
+    .team-card .role { font-size: 0.78rem; color: var(--accent); font-weight: 600; margin-bottom: 0.3rem; }
+    .team-card .inst { font-size: 0.78rem; color: var(--text-muted); }
+
+    /* ── RESULTS ── */
+    .results-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem; }
+    .result-card {
+      background: #fff; border-radius: 12px; padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07); border-top: 4px solid var(--accent);
+    }
+    .result-card h3 { font-size: 0.9rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem; }
+    .result-stat { display: flex; align-items: baseline; gap: 0.5rem; margin-bottom: 0.6rem; }
+    .result-stat .pct { font-size: 1.8rem; font-weight: 800; color: var(--accent); }
+    .result-stat .desc { font-size: 0.82rem; color: var(--text-muted); }
+    .efficacy-table {
+      width: 100%; border-collapse: collapse; font-size: 0.88rem;
+    }
+    .efficacy-table th {
+      background: var(--primary); color: #fff; padding: 0.7rem 1rem;
+      text-align: left; font-weight: 600;
+    }
+    .efficacy-table td { padding: 0.7rem 1rem; border-bottom: 1px solid var(--border); }
+    .efficacy-table tr:last-child td { border-bottom: none; }
+    .efficacy-table tr:nth-child(even) td { background: #f8f9fa; }
+    .sig { color: var(--accent); font-weight: 700; }
+    .table-wrap { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
+
+    /* ── PUBLICATIONS ── */
+    .pub-list { display: flex; flex-direction: column; gap: 1.2rem; }
+    .pub-card {
+      background: #fff; border-radius: 12px; padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      border-left: 5px solid var(--primary-light);
+      transition: border-color 0.18s;
+    }
+    .pub-card:hover { border-left-color: var(--accent); }
+    .pub-year { font-size: 0.75rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.4rem; }
+    .pub-title { font-size: 1rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; line-height: 1.35; }
+    .pub-authors { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+    .pub-journal { font-size: 0.85rem; color: var(--text); font-style: italic; margin-bottom: 0.8rem; }
+    .pub-link {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      color: var(--primary-light); font-size: 0.82rem; font-weight: 600;
+      text-decoration: none; transition: color 0.18s;
+    }
+    .pub-link:hover { color: var(--accent); }
+    .pub-badge {
+      display: inline-block; background: var(--badge-bg); color: var(--accent);
+      font-size: 0.72rem; font-weight: 700; padding: 0.2rem 0.6rem;
+      border-radius: 10px; margin-left: 0.5rem;
+    }
+
+    /* ── CONTACT ── */
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+    .contact-info p { margin-bottom: 0.8rem; }
+    .contact-info a { color: var(--primary-light); text-decoration: none; }
+    .contact-info a:hover { color: var(--accent); }
+    .contact-detail { display: flex; align-items: flex-start; gap: 0.7rem; margin-bottom: 1rem; }
+    .c-icon { font-size: 1.1rem; margin-top: 0.1rem; }
+    .funding-box {
+      background: #fff; border-radius: 12px; padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07); border-top: 3px solid var(--primary);
+    }
+    .funding-box h3 { color: var(--primary); margin-bottom: 1rem; font-size: 0.95rem; }
+    .funder-row { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 0.7rem; font-size: 0.88rem; }
+    .funder-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--hero-bg); color: rgba(255,255,255,0.65);
+      text-align: center; padding: 2rem 1.5rem; font-size: 0.82rem;
+    }
+    footer a { color: var(--accent-light); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .nav-links { display: none; flex-direction: column; position: absolute; top: 58px; left: 0; right: 0; background: var(--hero-bg); padding: 1rem; gap: 0.4rem; }
+      .nav-links.open { display: flex; }
+      .hamburger { display: flex; }
+      .about-grid, .contact-grid { grid-template-columns: 1fr; }
+      .sessions-grid { grid-template-columns: 1fr; }
+      .trial-info { grid-template-columns: 1fr; }
+      .stat-cards { grid-template-columns: 1fr 1fr; }
+    }
+
+    /* ── CARDS (manuales / proyectos) ── */
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.2rem; }
+    .info-card {
+      background: #fff; border-radius: 12px; padding: 1.4rem 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07); border-top: 4px solid var(--primary-light);
+      display: flex; flex-direction: column; gap: 0.45rem;
+    }
+    .info-card.accent-border { border-top-color: var(--accent); }
+    .info-card .kicker { font-size: 0.72rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em; }
+    .info-card h3 { font-size: 0.98rem; font-weight: 700; color: var(--primary); line-height: 1.35; }
+    .info-card p { font-size: 0.87rem; color: var(--text-muted); margin: 0; }
+    .info-card .meta { font-size: 0.8rem; color: var(--text); margin-top: auto; padding-top: 0.4rem; border-top: 1px solid var(--border); }
+    .status { display: inline-block; font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.55rem; border-radius: 10px; margin-left: 0.3rem; vertical-align: middle; }
+    .status-done { background: var(--badge-bg); color: var(--accent); }
+    .status-now { background: #fff3e0; color: #b7410e; }
+    .timeline { list-style: none; border-left: 3px solid var(--accent); margin-left: 0.6rem; padding-left: 1.4rem; display: flex; flex-direction: column; gap: 1.4rem; }
+    .timeline li { position: relative; }
+    .timeline li::before { content: ''; position: absolute; left: -2.05rem; top: 0.35rem; width: 13px; height: 13px; border-radius: 50%; background: var(--primary); border: 3px solid var(--bg); }
+    .timeline .when { font-size: 0.78rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.05em; }
+    .timeline h3 { font-size: 1rem; color: var(--primary); margin: 0.15rem 0 0.35rem; line-height: 1.35; }
+    .timeline p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.4rem; }
+    .note { font-size: 0.82rem; color: var(--text-muted); margin-top: 1.4rem; }
+    .pub-group { font-size: 1rem; font-weight: 700; color: var(--primary); margin: 0 0 1rem; }
+    .pub-list + .pub-group { margin-top: 2.2rem; }
+
+
+    .scale-list { display: flex; flex-direction: column; gap: 1.2rem; }
+    .scale-card { background: #fff; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.07); border-left: 5px solid var(--primary-light); }
+    .scale-card:hover { border-left-color: var(--accent); }
+    .scale-head { display: flex; gap: 1rem; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; }
+    .scale-head h3 { font-size: 1.15rem; color: var(--primary); font-weight: 800; }
+    .scale-name { font-size: 0.9rem; color: var(--text-muted); margin-top: 0.1rem; }
+    .btn-request { background: var(--accent); color: #fff; text-decoration: none; font-size: 0.82rem; font-weight: 700; padding: 0.5rem 1.1rem; border-radius: 6px; white-space: nowrap; }
+    .btn-request:hover { background: var(--primary-light); }
+    .scale-meta { display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 0.9rem 0 0.6rem; font-size: 0.85rem; color: var(--text); }
+    .scale-meta .k, .scale-ref .k { display: block; font-size: 0.7rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em; }
+    .scale-desc { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.8rem; }
+    .scale-ref { font-size: 0.83rem; color: var(--text); border-top: 1px solid var(--border); padding-top: 0.7rem; }
+    .scale-ref a { color: var(--primary-light); text-decoration: none; }
+    .scale-ref .k { margin-bottom: 0.2rem; }
+    .scale-terms { font-size: 0.8rem; color: var(--text-muted); font-style: italic; margin-top: 0.6rem; }
+    .terms-list { list-style: none; display: flex; flex-direction: column; gap: 0.8rem; }
+    .terms-list li { background: #fff; border-radius: 10px; padding: 1rem 1.2rem; font-size: 0.9rem; border-left: 4px solid var(--accent); box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.2rem; }
+    .info-card { background: #fff; border-radius: 12px; padding: 1.4rem 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.07); border-top: 4px solid var(--primary-light); display: flex; flex-direction: column; gap: 0.45rem; }
+    .info-card .kicker { font-size: 1.4rem; font-weight: 800; color: var(--accent); }
+    .info-card h3 { font-size: 0.98rem; font-weight: 700; color: var(--primary); }
+    .info-card p { font-size: 0.87rem; color: var(--text-muted); margin: 0; }
+    .note { font-size: 0.82rem; color: var(--text-muted); margin-top: 1.4rem; }
+    .nav-brand, .nav-links a { white-space: nowrap; }
+    @media (max-width: 900px) {
+      .nav-links { display: none; flex-direction: column; position: absolute; top: 58px; left: 0; right: 0; background: var(--hero-bg); padding: 1rem; gap: 0.4rem; }
+      .nav-links.open { display: flex; }
+      .hamburger { display: flex; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ════════════════ NAV ════════════════ -->
+<nav role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#inicio"><span>Escalas</span> validadas en Chile</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#catalogo" data-es="Catálogo" data-en="Catalogue">Catálogo</a>
+      <a href="#como" data-es="Cómo solicitarlas" data-en="How to request">Cómo solicitarlas</a>
+      <a href="#condiciones" data-es="Condiciones de uso" data-en="Terms of use">Condiciones de uso</a>
+      <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
+      <button class="lang-btn" id="langToggle" onclick="toggleLang()" aria-label="Switch language">EN</button>
+    </div>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ════════════════ HERO ════════════════ -->
+<section class="hero" id="inicio">
+  <div class="hero-tag" data-es="Instrumentos de medición · Población chilena" data-en="Measurement instruments · Chilean population">Instrumentos de medición · Población chilena</div>
+  <h1 data-es="Escalas validadas en Chile" data-en="Scales validated in Chile">Escalas validadas en Chile</h1>
+  <p class="hero-sub" data-es="Instrumentos validados en población chilena por el equipo del Centro de Investigación en Salud Mental Estudiantil (ISME) de la Universidad de los Andes, disponibles para investigación y docencia" data-en="Instruments validated in the Chilean population by the team of the Research Centre for Student Mental Health (ISME), Universidad de los Andes, available for research and teaching">Instrumentos validados en población chilena por el equipo del Centro de Investigación en Salud Mental Estudiantil (ISME) de la Universidad de los Andes, disponibles para investigación y docencia</p>
+  <div class="hero-meta">
+    <div class="hero-pill"><span data-es="&lt;strong&gt;Uso académico&lt;/strong&gt; · sin costo" data-en="&lt;strong&gt;Academic use&lt;/strong&gt; · free of charge"><strong>Uso académico</strong> · sin costo</span></div>
+    <div class="hero-pill"><span data-es="&lt;strong&gt;Respuesta automática&lt;/strong&gt; · enlace de descarga por correo" data-en="&lt;strong&gt;Automatic reply&lt;/strong&gt; · download link by email"><strong>Respuesta automática</strong> · enlace de descarga por correo</span></div>
+    <div class="hero-pill"><span data-es="&lt;strong&gt;Cada escala&lt;/strong&gt; con su artículo de validación" data-en="&lt;strong&gt;Each scale&lt;/strong&gt; with its validation paper"><strong>Cada escala</strong> con su artículo de validación</span></div>
+  </div>
+  <div class="hero-cta">
+    <a href="#catalogo" class="btn btn-primary" data-es="Ver el catálogo" data-en="See the catalogue">Ver el catálogo</a>
+    <a href="#como" class="btn btn-outline" data-es="Cómo solicitarlas" data-en="How to request">Cómo solicitarlas</a>
+  </div>
+</section>
+
+<section id="catalogo" class="section-alt">
+  <div class="section-inner">
+    <div class="title-bar">
+      <h2 class="section-title" data-es="Catálogo" data-en="Catalogue">Catálogo</h2>
+    </div>
+    <p class="section-subtitle" data-es="Instrumentos validados en población chilena" data-en="Instruments validated in the Chilean population">Instrumentos validados en población chilena</p>
+    <div class="scale-list">
+      <div class="scale-card">
+        <div class="scale-head">
+          <div>
+            <h3>PSSM-13</h3>
+            <div class="scale-name" data-es="Sentido Psicológico de Membresía Escolar, versión abreviada" data-en="Psychological Sense of School Membership, short version">Sentido Psicológico de Membresía Escolar, versión abreviada</div>
+          </div>
+          <a href="https://forms.gle/AE3AMWuSawWATAqA6" target="_blank" rel="noopener" class="btn-request" data-es="Solicitar el instrumento" data-en="Request the instrument">Solicitar el instrumento</a>
+        </div>
+        <div class="scale-meta">
+          <div><span class="k"><span data-es="Población" data-en="Population">Población</span></span> <span data-es="Adolescentes escolarizados" data-en="Secondary school adolescents">Adolescentes escolarizados</span></div>
+          <div><span class="k"><span data-es="Ítems" data-en="Items">Ítems</span></span> 13</div>
+        </div>
+        <p class="scale-desc" data-es="Evalúa el sentido de pertenencia al colegio: sentirse aceptado, respetado, incluido y apoyado por compañeros y profesores." data-en="Assesses the sense of belonging to school: feeling accepted, respected, included and supported by peers and teachers.">Evalúa el sentido de pertenencia al colegio: sentirse aceptado, respetado, incluido y apoyado por compañeros y profesores.</p>
+        <div class="scale-ref">
+          <span class="k" data-es="Validación en Chile:" data-en="Chilean validation:">Validación en Chile:</span> Gaete J, Montero-Marin J, Rojas-Barahona CA, Olivares E, Araya R (2016). <em>Frontiers in Psychology</em>, 7, 1901.
+          <a href="https://doi.org/10.3389/fpsyg.2016.01901" target="_blank" rel="noopener">https://doi.org/10.3389/fpsyg.2016.01901</a>
+        </div>
+        <div class="scale-terms" data-es="Disponible para investigación y docencia sin fines comerciales. La escala original fue desarrollada por Carol Goodenow (1993)." data-en="Available for non-commercial research and teaching. The original scale was developed by Carol Goodenow (1993).">Disponible para investigación y docencia sin fines comerciales. La escala original fue desarrollada por Carol Goodenow (1993).</div>
+      </div>
+      <div class="scale-card">
+        <div class="scale-head">
+          <div>
+            <h3>Y-PSC</h3>
+            <div class="scale-name" data-es="Lista de Síntomas Pediátricos, informe del joven" data-en="Pediatric Symptom Checklist, Youth Report">Lista de Síntomas Pediátricos, informe del joven</div>
+          </div>
+          <a href="https://forms.gle/AE3AMWuSawWATAqA6" target="_blank" rel="noopener" class="btn-request" data-es="Solicitar el instrumento" data-en="Request the instrument">Solicitar el instrumento</a>
+        </div>
+        <div class="scale-meta">
+          <div><span class="k"><span data-es="Población" data-en="Population">Población</span></span> <span data-es="Adolescentes tempranos (10 a 14 años)" data-en="Early adolescents (10–14 years)">Adolescentes tempranos (10 a 14 años)</span></div>
+          <div><span class="k"><span data-es="Ítems" data-en="Items">Ítems</span></span> 35 · 34 · 17 · 16</div>
+        </div>
+        <p class="scale-desc" data-es="Tamizaje de problemas psicosociales, con subescalas de atención, internalización y externalización. Se entregan las cuatro versiones: las originales de 35 y 17 ítems y las de 34 y 16 ítems propuestas en la validación chilena." data-en="Screening of psychosocial problems, with attention, internalising and externalising subscales. All four versions are provided: the original 35- and 17-item forms and the 34- and 16-item forms proposed in the Chilean validation.">Tamizaje de problemas psicosociales, con subescalas de atención, internalización y externalización. Se entregan las cuatro versiones: las originales de 35 y 17 ítems y las de 34 y 16 ítems propuestas en la validación chilena.</p>
+        <div class="scale-ref">
+          <span class="k" data-es="Validación en Chile:" data-en="Chilean validation:">Validación en Chile:</span> Ramírez S, Gana S, Godoy MI, Valenzuela D, Araya R, Gaete J (2023). <em>PLOS ONE</em>.
+          <a href="https://doi.org/10.1371/journal.pone.0283921" target="_blank" rel="noopener">https://doi.org/10.1371/journal.pone.0283921</a>
+        </div>
+        <div class="scale-terms" data-es="Disponible para investigación y docencia sin fines comerciales. El Pediatric Symptom Checklist original es de uso libre." data-en="Available for non-commercial research and teaching. The original Pediatric Symptom Checklist is free to use.">Disponible para investigación y docencia sin fines comerciales. El Pediatric Symptom Checklist original es de uso libre.</div>
+      </div>
+      <div class="scale-card">
+        <div class="scale-head">
+          <div>
+            <h3>OBVQ-R</h3>
+            <div class="scale-name" data-es="Cuestionario de experiencias de bullying (Revised Olweus Bully/Victim Questionnaire)" data-en="Bullying experiences questionnaire (Revised Olweus Bully/Victim Questionnaire)">Cuestionario de experiencias de bullying (Revised Olweus Bully/Victim Questionnaire)</div>
+          </div>
+          <a href="https://forms.gle/AE3AMWuSawWATAqA6" target="_blank" rel="noopener" class="btn-request" data-es="Solicitar el instrumento" data-en="Request the instrument">Solicitar el instrumento</a>
+        </div>
+        <div class="scale-meta">
+          <div><span class="k"><span data-es="Población" data-en="Population">Población</span></span> <span data-es="Estudiantes de 4.º a 8.º básico" data-en="Students in grades 4 to 8">Estudiantes de 4.º a 8.º básico</span></div>
+          <div><span class="k"><span data-es="Ítems" data-en="Items">Ítems</span></span> 42</div>
+        </div>
+        <p class="scale-desc" data-es="Evalúa la victimización y la agresión por acoso escolar en sus distintas formas, incluido el ciberacoso, durante los últimos dos meses." data-en="Assesses bullying victimisation and perpetration in its different forms, including cyberbullying, over the last two months.">Evalúa la victimización y la agresión por acoso escolar en sus distintas formas, incluido el ciberacoso, durante los últimos dos meses.</p>
+        <div class="scale-ref">
+          <span class="k" data-es="Validación en Chile:" data-en="Chilean validation:">Validación en Chile:</span> Gaete J, Valenzuela D, Godoy MI, Rojas-Barahona CA, Salmivalli C, Araya R (2021). <em>Frontiers in Psychology</em>, 12, 578661.
+          <a href="https://doi.org/10.3389/fpsyg.2021.578661" target="_blank" rel="noopener">https://doi.org/10.3389/fpsyg.2021.578661</a>
+        </div>
+        <div class="scale-terms" data-es="El cuestionario original es propiedad de Dan Olweus y del centro HEMIL de la Universidad de Bergen. Se entrega la versión adaptada al español de Chile, sujeta además a las condiciones del titular original." data-en="The original questionnaire belongs to Dan Olweus and the HEMIL centre, University of Bergen. The version adapted to Chilean Spanish is provided, also subject to the original holder&#x27;s terms.">El cuestionario original es propiedad de Dan Olweus y del centro HEMIL de la Universidad de Bergen. Se entrega la versión adaptada al español de Chile, sujeta además a las condiciones del titular original.</div>
+      </div>
+    </div>
+    <p class="note" data-es="Este es un catálogo en construcción: se irán agregando los demás instrumentos validados por el equipo." data-en="This catalogue is being built: the remaining instruments validated by the team will be added.">Este es un catálogo en construcción: se irán agregando los demás instrumentos validados por el equipo.</p>
+  </div>
+</section>
+
+<section id="como">
+  <div class="section-inner">
+    <div class="title-bar">
+      <h2 class="section-title" data-es="Cómo solicitarlas" data-en="How to request them">Cómo solicitarlas</h2>
+    </div>
+    <p class="section-subtitle" data-es="Tres pasos, sin intercambio de correos" data-en="Three steps, with no email exchange">Tres pasos, sin intercambio de correos</p>
+    <div class="card-grid">
+      <div class="info-card">
+        <div class="kicker">1</div>
+        <h3 data-es="Elija el instrumento" data-en="Choose the instrument">Elija el instrumento</h3>
+        <p data-es="Cada ficha del catálogo indica qué mide la escala, para qué edades sirve, cuántos ítems tiene y en qué artículo se publicó su validación en Chile." data-en="Each entry in the catalogue states what the scale measures, the age range, the number of items and the article in which its Chilean validation was published.">Cada ficha del catálogo indica qué mide la escala, para qué edades sirve, cuántos ítems tiene y en qué artículo se publicó su validación en Chile.</p>
+      </div>
+      <div class="info-card">
+        <div class="kicker">2</div>
+        <h3 data-es="Complete el formulario" data-en="Complete the form">Complete el formulario</h3>
+        <p data-es="Le pediremos su nombre, institución, país, correo institucional y el uso que dará al instrumento. Toma menos de dos minutos." data-en="We ask for your name, institution, country, institutional email and the intended use of the instrument. It takes less than two minutes.">Le pediremos su nombre, institución, país, correo institucional y el uso que dará al instrumento. Toma menos de dos minutos.</p>
+      </div>
+      <div class="info-card">
+        <div class="kicker">3</div>
+        <h3 data-es="Reciba el enlace de descarga" data-en="Receive the download link">Reciba el enlace de descarga</h3>
+        <p data-es="El envío es automático: recibirá en su correo el enlace al instrumento y la cita del artículo de validación que debe usar al publicar." data-en="Delivery is automatic: you will receive an email with the link to the instrument and the citation of the validation paper to use in your publications.">El envío es automático: recibirá en su correo el enlace al instrumento y la cita del artículo de validación que debe usar al publicar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="condiciones" class="section-alt">
+  <div class="section-inner">
+    <div class="title-bar">
+      <h2 class="section-title" data-es="Condiciones de uso" data-en="Terms of use">Condiciones de uso</h2>
+    </div>
+    <p class="section-subtitle" data-es="Qué se puede hacer con los instrumentos" data-en="What can be done with the instruments">Qué se puede hacer con los instrumentos</p>
+    <ul class="terms-list">
+      <li><span data-es="Los instrumentos se entregan para &lt;strong&gt;investigación, docencia y uso clínico no comercial&lt;/strong&gt;. Cualquier otro uso requiere autorización escrita." data-en="The instruments are provided for &lt;strong&gt;research, teaching and non-commercial clinical use&lt;/strong&gt;. Any other use requires written authorisation.">Los instrumentos se entregan para <strong>investigación, docencia y uso clínico no comercial</strong>. Cualquier otro uso requiere autorización escrita.</span></li>
+      <li><span data-es="Al publicar resultados obtenidos con el instrumento, se debe &lt;strong&gt;citar el artículo de validación&lt;/strong&gt; indicado en su ficha." data-en="When publishing results obtained with the instrument, the &lt;strong&gt;validation paper&lt;/strong&gt; listed in its entry must be cited.">Al publicar resultados obtenidos con el instrumento, se debe <strong>citar el artículo de validación</strong> indicado en su ficha.</span></li>
+      <li><span data-es="No está permitido &lt;strong&gt;redistribuir&lt;/strong&gt; el instrumento ni publicarlo en otros sitios. Quien lo necesite puede solicitarlo aquí." data-en="The instrument may not be &lt;strong&gt;redistributed&lt;/strong&gt; or posted on other websites. Anyone who needs it can request it here.">No está permitido <strong>redistribuir</strong> el instrumento ni publicarlo en otros sitios. Quien lo necesite puede solicitarlo aquí.</span></li>
+      <li><span data-es="Las &lt;strong&gt;modificaciones&lt;/strong&gt; del instrumento (ítems, formato de respuesta o traducción) requieren acuerdo previo con el equipo." data-en="&lt;strong&gt;Modifications&lt;/strong&gt; to the instrument (items, response format or translation) require prior agreement with the team.">Las <strong>modificaciones</strong> del instrumento (ítems, formato de respuesta o traducción) requieren acuerdo previo con el equipo.</span></li>
+      <li><span data-es="Algunas escalas tienen &lt;strong&gt;titulares de derechos externos&lt;/strong&gt;. En esos casos la ficha indica la condición que corresponde." data-en="Some scales have &lt;strong&gt;external copyright holders&lt;/strong&gt;. In those cases, the entry states the applicable condition.">Algunas escalas tienen <strong>titulares de derechos externos</strong>. En esos casos la ficha indica la condición que corresponde.</span></li>
+      <li><span data-es="Los datos del formulario se usan solo para &lt;strong&gt;registrar la solicitud&lt;/strong&gt; y enviar el enlace, y no se comparten con terceros." data-en="Form data are used only to &lt;strong&gt;record the request&lt;/strong&gt; and send the link, and are not shared with third parties.">Los datos del formulario se usan solo para <strong>registrar la solicitud</strong> y enviar el enlace, y no se comparten con terceros.</span></li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ════════════════ CONTACT ════════════════ -->
+<section id="contacto" class="section-alt">
+  <div class="section-inner">
+    <div class="title-bar">
+      <h2 class="section-title" data-es="Contacto" data-en="Contact">Contacto</h2>
+    </div>
+    <p class="section-subtitle" data-es="Información de contacto e instituciones financiadoras" data-en="Contact information and funding institutions">Información de contacto e instituciones financiadoras</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-detail">
+          <span class="c-icon">👤</span>
+          <div>
+            <strong>Jorge Gaete</strong><br/>
+            <span style="font-size:0.88rem; color:var(--text-muted);" data-es="Psiquiatra e investigador en salud mental" data-en="Psychiatrist and mental health researcher">Psiquiatra e investigador en salud mental</span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <span class="c-icon">🏛️</span>
+          <div style="font-size:0.9rem;">
+            <span data-es="&lt;a href=&quot;https://www.ismeuandes.cl&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Centro de Investigación en Salud Mental Estudiantil (ISME)&lt;/a&gt;" data-en="&lt;a href=&quot;https://www.ismeuandes.cl&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Research Centre for Student Mental Health (ISME)&lt;/a&gt;"><a href="https://www.ismeuandes.cl" target="_blank" rel="noopener">Centro de Investigación en Salud Mental Estudiantil (ISME)</a></span><br/>
+            <span data-es="Escuela de Educación, Facultad de Ciencias Sociales" data-en="School of Education, Faculty of Social Sciences">Escuela de Educación, Facultad de Ciencias Sociales</span><br/>
+            Universidad de los Andes, Chile
+          </div>
+        </div>
+        <div class="contact-detail">
+          <span class="c-icon">🌐</span>
+          <div style="font-size:0.9rem;">
+            <a href="https://jegaete.github.io" target="_blank" rel="noopener">jegaete.github.io</a>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <span class="c-icon">📬</span>
+          <div>
+            <a href="https://www.ismeuandes.cl/contacto/" target="_blank" rel="noopener" style="font-size:0.9rem;">ismeuandes.cl/contacto</a>
+          </div>
+        </div>
+      </div>
+      <div class="funding-box">
+        <h3 data-es="Financiamiento" data-en="Funding">Financiamiento</h3>
+        <div class="funder-row">
+          <div class="funder-dot"></div>
+          <div>
+            <strong data-es="Centro de Investigación en Salud Mental Estudiantil (ISME)" data-en="Research Centre for Student Mental Health (ISME)">Centro de Investigación en Salud Mental Estudiantil (ISME)</strong><br/>
+            <span style="font-size:0.82rem; color:var(--text-muted);" data-es="Escuela de Educación, Universidad de los Andes, Chile" data-en="School of Education, Universidad de los Andes, Chile">Escuela de Educación, Universidad de los Andes, Chile</span>
+          </div>
+        </div>
+        <hr style="border:none; border-top:1px solid var(--border); margin:1rem 0;"/>
+        <p style="font-size:0.85rem; color:var(--text-muted);" data-es="Para consultas sobre el proyecto, puede contactarnos a través del sitio web del &lt;a href=&#x27;https://www.ismeuandes.cl/contacto/&#x27; target=&#x27;_blank&#x27; rel=&#x27;noopener&#x27;&gt;ISME&lt;/a&gt;." data-en="For inquiries about the project, please contact us through the &lt;a href=&#x27;https://www.ismeuandes.cl/contacto/&#x27; target=&#x27;_blank&#x27; rel=&#x27;noopener&#x27;&gt;ISME website&lt;/a&gt;.">Para consultas sobre el proyecto, puede contactarnos a través del sitio web del <a href='https://www.ismeuandes.cl/contacto/' target='_blank' rel='noopener'>ISME</a>.</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ FOOTER ════════════════ -->
+<footer>
+  <p>
+    <span data-es="Escalas validadas en Chile · Centro ISME, Universidad de los Andes" data-en="Scales validated in Chile · ISME, Universidad de los Andes">Escalas validadas en Chile · Centro ISME, Universidad de los Andes</span>
+    &nbsp;·&nbsp;
+    <a href="https://jegaete.github.io" target="_blank" rel="noopener">jegaete.github.io</a>
+  </p>
+</footer>
+
+<script>
+  let currentLang = 'es';
+  function toggleLang() { currentLang = currentLang === 'es' ? 'en' : 'es'; applyLang(); }
+  function applyLang() {
+    const btn = document.getElementById('langToggle');
+    btn.textContent = currentLang === 'es' ? 'EN' : 'ES';
+    document.documentElement.lang = currentLang;
+    document.querySelectorAll('[data-es]').forEach(el => {
+      const text = el.getAttribute('data-' + currentLang);
+      if (!text) return;
+      if (text.includes('<') || text.includes('&lt;')) {
+        el.innerHTML = text.replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+      } else {
+        el.textContent = text;
+      }
+    });
+  }
+  function toggleMenu() { document.getElementById('navLinks').classList.toggle('open'); }
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+  });
+</script>
+</body>
+</html>
